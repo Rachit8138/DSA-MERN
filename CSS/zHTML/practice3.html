@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+<!--1.Recreate the following table using HTML -->
+<table border>
+    <caption>Student information</caption>
+    <tr>
+        <th rowspan="5">Info</th>
+        <th rowspan="2">Name</th>
+        <th colspan=2>Address</th>
+    </tr>
+    <tr>
+        <th>City</th>
+        <th>House</th>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>Delhi</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>B</td>
+        <td>Mumbai</td>
+        <td>2</td>
+    </tr>
+    
+    <tr>
+        <td>C</td>
+        <td>Kolkata</td>
+        <td>3</td>
+    </tr>
+</table><hr>
+<!--2.Recreate the following table using HTML -->
+<form action="/action">
+    <div>
+        <label for="name">Name: </label>
+    <input type="text" id="name" name="name">
+    </div>
+    <div>
+        <label for="gender">Please select gender: </label>
+        <select name="gender" id="gender">
+            <option>Gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="o">others</option>
+        </select>
+    </div>
+
+    <div>
+        <!-- here value is what will be passed in the url -->
+        Sex: 
+        <input type="radio" id="male" name="sex" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sex" value="female">
+        <label for="female">Female</label>
+        <br>
+    </div>
+
+    <div> 
+        Country:
+        <select id="country" name="country">
+            <option> Select an  option </option>
+            <option value="india">India</option>
+            <option value="Nepal">Nepal</option>
+        </select>
+    </div>
+
+    <div> 
+        <label for="message">Message:</label><br>
+        <textarea id="feedback" name="feedback" placeholder="please write"></textarea>
+    </div>
+
+    <div>
+        <input type="checkbox" id="sub" name="sub">
+    <label for="sub" >Subscribe</label><br>
+    </div>
+    <br> 
+<div>
+    Rate us our of 5: <br>
+    <input type="radio" id="1" name="rate" value="1">
+    <label for="1">1</label><br>
+    <input type="radio" id="2" name="rate" value="2">
+    <label for="2">2</label><br>
+    <input type="radio" id="3" name="rate" value="3">
+    <label for="3">3</label><br>
+    <input type="radio" id="4" name="rate" value="4">
+    <label for="4">4</label><br>
+    <input type="radio" id="5" name="rate" value="5">
+    <label for="5">5</label><br>
+    
+</div>
+    
+    <button> Submit</button>
+</form>
+
+<hr> 
+
+<!-- practice qn8. Create a serch option that redirects its search request to google  -->
+<form action =https://www.google.com/search>
+    <input type="text" name="q" placeholder="search in google">
+    <button>submit</button>
+
+    <!-- Note: what you need is the link so that since you can see that since google uses "search " as a name then what yo ucan do is just put search
+    action with the link upto search and then put your name ="search " what it will do link your serch result with link with the google one  -->
+
+
+    
+</form>
+
+</body>
+</html>

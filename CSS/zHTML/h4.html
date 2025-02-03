@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/server">
+    <!-- <div>
+        <label for ="username" >Username:</label>
+    <input type="text" placeholder="name" id="Username" name="query"/>
+    </div>
+    
+    <div>
+    <label for ="Password">Password: </label>
+    <input type="password" placeholder="Password " id="Password" name="pass"/>
+    </div> -->
+    <!-- the name tag makes this in the link server?query=rachit&pass=abc123 -->
+    
+
+    <!-- checkbox -->
+
+    <input type="checkbox" id="age" name="age">
+    <label for="age" >I am 18+</label><br>
+    
+    <!-- If you click the button and hit submit then you url: age=on -->
+
+    <!-- Radio button -->
+     
+     <input type="radio" id="apple" name="fruit" value="apple">
+     <label for="apple">Apple</label>'
+     <input type="radio" id="mango" name="fruit" value="mango">
+     <label for="Mango">Mango</label>
+     <input type="radio" id="pine" name="fruit" value="pine">
+     <label for="pine">Pine</label>' <br>   
+
+     <!-- Since here "name" attribute is same so it will select the related group fruit on will be gone
+     value is written so that in url you will be given apple, mango name specifically, rather than on -->
+
+
+     <!-- Dropdown -->
+      Choose your profession<select name="profession" id="profession">
+        <option>Select your option</option>
+        <option value="stud">Student</option>
+        <option value="Dev">Developer</option>
+      </select>
+      <BR>
+
+        <!-- Range -->
+         <label for="vol">Select your volume level</labell>
+         <input type="range" id="vol" name="vol" min="0" max="100" step="10"><br>
+<!-- step is for knowing the interval for each  -->
+
+            <!-- Text area -->
+    <label for="feedback">Please comment:</label>
+    <textarea id="feedback" name="feedback" placeholder="please write"></textarea>
+     <br>
+     <button>submit</button>
+<!-- label "for" will make it clickable for feedback id
+     what you need to understand is that name="feedback" wil pass feedback=hi+how+are+you+doing -->
+</form>
+</body>
+</html>

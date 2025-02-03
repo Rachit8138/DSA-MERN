@@ -1,0 +1,29 @@
+h1{
+    color:orange;
+}
+
+p{
+    color:white;
+    background-color:black;
+}
+
+button{
+    background-color: blue;
+    color:rgb(255,255,255);
+
+}
+
+/* Practice question css3 */
+
+h2{
+    font-family:League spartan;
+    color:#ffa511;
+    text-align:center;
+    font-size: 55px;
+    font-weight:900;
+    letter-spacing: 2px;
+    line-height:1.5px;
+    text-decoration: teal double underline;
+    text-transform:uppercase;
+}
+
