@@ -11,7 +11,7 @@ console.log(array.splice(0,n));
 //     Print, [9, 0, -2]
 console.log(array.splice(array.length-n));
 //     Qs3. Write a JavaScript program to check whether a string is blank or not.
-let str='hello'
+let str='m'
     if (str.length==0){
         console.log("string is empty");
     }else{
@@ -27,5 +27,14 @@ if (str[idx]==st[idx].toLowerCase()){
     console.log("character is not lowercase");
 }
 //     Qs5. Write a JavaScript program to strip leading and trailing spaces from a string.
-
+let m="sfdsgsdg s sdfe";
+console.log(`original string : ${m}`);
+console.log(`string without space :${m.trim()}`);
 //     Qs6. Write a JavaScript program to check if an element exists in an array or not.
+let box=["hello",'a', 23, 64,-6];
+let item=89;
+if(box.indexOf(item)!= -1){
+    console.log("element exists in array");
+} else {
+    console.log("element doesn't exist in array");
+}
