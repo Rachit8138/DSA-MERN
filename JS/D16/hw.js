@@ -9,7 +9,8 @@ console.log(array.splice(0,n));
 //     positive number].
 //     For example: for array [7, 9, 0, -2] and n=3
 //     Print, [9, 0, -2]
-console.log(array.splice(array.length-n));
+let arr = [7, 9, 0, -2];//////most imp thing is that splice changes the value of array in above so creating a new one
+console.log(arr.splice(arr.length-n));
 //     Qs3. Write a JavaScript program to check whether a string is blank or not.
 let str='m'
     if (str.length==0){
