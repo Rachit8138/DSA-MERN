@@ -14,12 +14,36 @@ function larger(arr,num){
 larger(arr, num)
 // Qs2. Write a JavaScript function to extract unique characters from a string.
 // Example: str = “abcdabcdefgggh” ans = “abcdefgh”
+let str = "abcdabcdefgggh";
 
+//function to get String with all unique elements
+/* function getUnique(str) {
+    ans = "";
+    for (i=0;i<=str.length;i++){
+        if (ans.indexOf(str[i])==-1){
+            ans+=str[i];
+        }
+    }
+    console.log(ans);
+} */
+
+    function getUnique(str){
+        ans='';
+        for (a of str){
+            if(ans.indexOf(a)==-1){
+                ans+=a;
+            }
+        }
+        console.log(ans);
+    }
+getUnique(str);
 // Qs3. Write a JavaScript function that accepts a list of country names as input and
 // returns the longest country name as output.
 // Example : country = ["Australia", "Germany", "United States of America"] output :
 
 // "United States of America"
+
+country = ["Australia", "Germany", "United States of America"]
 
 // Qs4. Write a JavaScript function to count the number of vowels in a String
 // argument.
