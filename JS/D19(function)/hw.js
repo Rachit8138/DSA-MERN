@@ -43,10 +43,24 @@ getUnique(str);
 
 // "United States of America"
 
-country = ["Australia", "Germany", "United States of America"]
+let country = ["Australia", "Germany", "United States of America"]
 
+function size(country){
+    let largest='';
+    for (str of country){
+       if (largest.length<str.length){
+        largest=str;
+       }         
+    }
+    console.log(largest);
+}
+
+size(country);
 // Qs4. Write a JavaScript function to count the number of vowels in a String
 // argument.
+
+
+
 
 // Qs5. Write a JavaScript function to generate a random number within a range
 // (start, end).
