@@ -58,9 +58,24 @@ function size(country){
 size(country);
 // Qs4. Write a JavaScript function to count the number of vowels in a String
 // argument.
+function vowel(str){
+    let count=0;
+    let list=['a','e','i','o','u'];
+    for (x of str){
+        // if (list.indexOf(x)==0){ // this will check only if present in index 0  
+        if (list.indexOf(x)!=-1){
+            console.log(x);
+            count++;
+        }
+    }
+    console.log(count);
+}
+
+vowel('australia')
 
 
 
 
 // Qs5. Write a JavaScript function to generate a random number within a range
 // (start, end).
+
