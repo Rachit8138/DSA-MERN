@@ -45,10 +45,16 @@ const student={
 // this will mean parent scope 
 
 /* new one */
+getInfo1: function(){
+    setTimeout(() =>{
+        console.log(this);  // student 
+    }, 2000);
+}, 
+getInfo2: function(){
+    setTimeout(() =>{
+        console.log(this);  // windown
+    }, 2000);
+}, 
 
 
 };
-
-
-
-const a =5;     // global scope
