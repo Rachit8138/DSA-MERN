@@ -1,0 +1,54 @@
+const cube=(n) => {// this works as intitialiser
+    console.log( n*n*n);  // in this type you can even perfor calculation, print and even return 
+}
+
+const pow=(a,b) =>{return a**b};// this is the more compact way of writing
+
+/* Implicit return */
+const mul =(a,b) =>a*b;// where only value is returned and no calculation or printing is made
+
+const square=(n) => n*n; 
+
+/* Set Timeout */
+console.log("hi there");
+
+setTimeout(()=>{
+    console.log("apna college");
+}, 4000);
+
+console.log("welcome to");
+
+/* Set Interval */
+
+id1= setInterval( ()=>{
+    console.log('Apna college');
+}, 2000);
+
+clearInterval(id1)
+
+/* this with arrow function */
+const student={
+    name: "aman",
+    marks:95,
+    prop:this,  // global scope
+    getName: function() {   // normal function is used here
+        console.log(this);  /// will give you window
+        return this.name;
+    }, 
+
+    /* down one is not important at all */
+    getMarks:()=> {   // arrow function used
+        console.log(this); // parent's scope ->window obj
+        return this.marks;
+    }, 
+// arrow function ko lagi this will not be calling obj
+// this will mean parent scope 
+
+/* new one */
+
+
+};
+
+
+
+const a =5;     // global scope
