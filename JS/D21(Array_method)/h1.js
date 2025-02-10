@@ -37,3 +37,13 @@ console.log(array.some((el)=>(el%2==0)));//it was very difficult to use this met
 let nums=[1,2,3,4];
 let finalval=nums.reduce((res, el)=> res+el);
 console.log(finalval);
+
+/* maximum in an array uring reduce */
+let max=nums.reduce((max,el)=>{
+    if(el>max){
+        return el;
+    }else{
+        return max;
+    }
+})
+console.log(max);
