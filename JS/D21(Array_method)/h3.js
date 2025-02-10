@@ -23,3 +23,13 @@ console.log(nums);
 
 /* ----------------------------------------------------------------------- */
 /* spred with object literals */
+const data={
+    email:"rachitpra@gmail.com",
+    password:"abcd",
+};
+const dataCopy={...data,id:123, country:"India"};
+console.log(dataCopy);
+let a=[1,2,3,4,5]; // array stores value
+let obj ={... arr}// obj->key:val
+
+console.log(obj);/* { '0': 1, '1': 2, '2': 3, '3': 4, '4': 5, '5': 7 } */
