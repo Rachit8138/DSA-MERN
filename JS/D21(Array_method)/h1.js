@@ -6,8 +6,10 @@ let arr=[{
     marks:94
 }];
 /* forEach */
+let array=[];// i have this array for the some method
 arr.forEach((el)=>{
     console.log(el.marks);
+    array.push(el.marks);// used this line for some method only
 })
 /* Map */
 let gpa =arr.map((el)=>{
@@ -28,3 +30,10 @@ let ans=num.filter((el)=>{
 console.log(value);
 
 /* every */
+console.log(array);
+console.log(array.some((el)=>(el%2==0)));//it was very difficult to use this method
+
+/* reduce */
+let nums=[1,2,3,4];
+let finalval=nums.reduce((res, el)=> res+el);
+console.log(finalval);
