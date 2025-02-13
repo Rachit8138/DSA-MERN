@@ -1,6 +1,6 @@
-const cube=(n) => {// this works as intitialiser
-    console.log( n*n*n);  // in this type you can even perfor calculation, print and even return 
-}
+const cube=(n) => {console.log( n*n*n)};// this works as intitialiser
+      // in this type you can even perfor calculation, print and even return 
+
 
 const pow=(a,b) =>{return a**b};// this is the more compact way of writing
 
@@ -14,10 +14,11 @@ console.log("hi there");
 
 setTimeout(()=>{
     console.log("apna college");
-}, 4000);
+}, 100);
 
 console.log("welcome to");
-
+console.log('even and out');
+console.log('even and out');console.log('even and out');console.log('even and out');console.log('even and out');console.log('even and out');
 /* Set Interval */
 
 id1= setInterval( ()=>{
