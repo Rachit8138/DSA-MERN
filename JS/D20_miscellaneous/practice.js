@@ -46,6 +46,4 @@ getInfo2: function(){
         console.log(this);  // windown
     }, 2000);
 }, 
-
-
 };
