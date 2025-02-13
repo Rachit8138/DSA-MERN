@@ -17,8 +17,6 @@ setTimeout(()=>{
 }, 100);
 
 console.log("welcome to");
-console.log('even and out');
-console.log('even and out');console.log('even and out');console.log('even and out');console.log('even and out');console.log('even and out');
 /* Set Interval */
 
 id1= setInterval( ()=>{
