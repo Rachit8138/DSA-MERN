@@ -35,14 +35,6 @@ const student={
         return this.name;
     }, 
 
-    /* down one is not important at all */
-    getMarks:()=> {   // arrow function used
-        console.log(this); // parent's scope ->window obj
-        return this.marks;
-    }, 
-// arrow function ko lagi this will not be calling obj
-// this will mean parent scope 
-
 /* new one */
 getInfo1: function(){
     setTimeout(() =>{
