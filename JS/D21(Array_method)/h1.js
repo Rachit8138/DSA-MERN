@@ -7,7 +7,7 @@ let arr=[{
 }];
 /* forEach */
 let array=[];// i have this array for the some method
-arr.forEach((el)=>{
+arr.forEach((el)=>{// used arrow function better convenience
     console.log(el.marks);
     array.push(el.marks);// used this line for some method only
 })
