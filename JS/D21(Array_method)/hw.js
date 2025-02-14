@@ -15,9 +15,14 @@ console.log("average: ", sum/nums.length);
 
 // Qs2. Create a new array using the map function whose each element is equal to the
 // original element plus 5.
+console.log(nums.map(el=>{
+    return el+5;
+}));
 
 // Qs3. Create a new array whose elements are in uppercase of words present in the
 // original array.
+let string=['rachit', 'prashna', 'jebisha'];
+console.log(string.map((el)=>el.toUpperCase()));
 
 // Qs4. Write a function called doubleAndReturnArgs which accepts an array and a
 // variable number of arguments. The function should return a new array with the original
