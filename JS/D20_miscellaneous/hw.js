@@ -1,3 +1,5 @@
+/* ......for this chapter only this ..... */
+
 /* JS part7 */
 
 // qs1. write an arrow function named arrayAverage that accepts an array of numbers and returns the average of those numbers.

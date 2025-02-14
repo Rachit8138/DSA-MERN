@@ -15,6 +15,7 @@ arr.forEach((el)=>{// used arrow function better convenience
 let gpa =arr.map((el)=>{
     return el.marks/10;
 });
+console.log(gpa);
 
 /* Filter */
 
