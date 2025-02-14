@@ -11,9 +11,6 @@ newarray.push(7);
 console.log(array);
 /* only copyting the value  */
 
-console.log(..."hello");
-// individual character is printed
-
 // to combine both in one 
 let nums = [...arr, ...array] ;
 console.log(nums);
