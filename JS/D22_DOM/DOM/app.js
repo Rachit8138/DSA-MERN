@@ -9,3 +9,5 @@ for (let i=0;i<smallImages.length;i++){
 }
 
 // there has been some changes made
+
+oke the 
