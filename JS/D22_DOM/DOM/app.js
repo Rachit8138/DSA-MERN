@@ -8,6 +8,3 @@ for (let i=0;i<smallImages.length;i++){
     console.log(`value of image ${i} is changed`);
 }
 
-// there has been some changes made
-
-oke the 
