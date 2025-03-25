@@ -1,3 +1,4 @@
+/* EASY */
 // question no 1
 let a = 10;
 if(a%10==0){
@@ -35,9 +36,4 @@ if ((char[0]=='a' || char[0]=='A') && char.length>5){
 }
 
 // question no 5&6 are very easy 
-
-let pencilPrice = 10;
-let eraserPrice = 5;
-
-console.log(`The total price is ${pencilPrice + eraserPrice}`);
 
