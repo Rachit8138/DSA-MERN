@@ -1,20 +1,3 @@
-/* 
-let a =10; 
-let b=5; 
-console.log("sum is:",a+b);
-// this is comment  
-
-*/
-
-/* let pencilPrice=10;
-let eraserPrice= 20; 
-console.log(" total price: ", pencilPrice + eraserPrice, "only");
-
-let output=`The total price is : ${pencilPrice + eraserPrice} only`; 
-console.log(output); */
-
-/* ${} // back ticks */
-
 // question no 1
 let a = 10;
 if(a%10==0){
@@ -26,7 +9,7 @@ if(a%10==0){
 // question no 2
 let name=prompt("enter your name: ");
 let age= prompt("enter your age: ");
-alert(`${name} is ${age} years old`);
+alert(`${name} is ${age} years old`);/* ${} // back ticks */
 // question no 3
 let m=2
 
