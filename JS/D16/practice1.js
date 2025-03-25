@@ -3,7 +3,7 @@ let start=['january','july','march','august'];
 /* start.splice(0,1);
 start.splice(1,0,'june') */
 
-a=start.splice(0,2,'july','june');
+a=start.splice(0,3,'july','june');
 console.log(a);
 console.log(start);
 
