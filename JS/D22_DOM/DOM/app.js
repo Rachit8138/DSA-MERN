@@ -1,10 +1,14 @@
-let smallImages=document.getElementsByClassName("images");
+// let smallImages=document.getElementsByClassName("images");
 // for(let i=0;i<smallImages.length;i++){
 //     console.log(smallImages[i][src])
 // }
 
-for (let i=0;i<smallImages.length;i++){
-    smallImages[i].src="Assets/Spider-Man.png";
-    console.log(`value of image ${i} is changed`);
-}
+// for (let i=0;i<smallImages.length;i++){
+//     smallImages[i].src="Assets/Spider-Man.png";
+//     console.log(`value of image ${i} is changed`);
+// }
+
+/* Query */
+console.log(Document.querySelector("h1"));
+
 
