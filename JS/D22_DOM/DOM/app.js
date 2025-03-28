@@ -29,5 +29,18 @@ console.log(document.querySelector(".oldimg"));
 console.log(document.querySelector("div a"));// will give you the first element found in div of 'a' element
 console.log(document.querySelectorAll("p"));// gives you all the element 'p'
 
+/* Using properties and method */
+/* let para = document.getElementById('p')
+para.innerText='abc';
+'abc'   
+para.innerHTML="hi, i am <b> Peter parker</b>";
+'hi, i am <b> Peter parker</b>'
+ */
 
+let heading = document.querySelector('h1');
+console.dir(heading);// to display the properties of h1
+console.log(heading);// to display the value of the heading
+
+// heading.innerHTML="<u> Spiderman </u>";
+heading.innerHTML=`<u> ${heading.innerText}</u>`
 
