@@ -43,11 +43,6 @@ console.log(heading);// to display the value of the heading
 
 // heading.innerHTML="<u> Spiderman </u>";
 heading.innerHTML=`<u> ${heading.innerText}</u>`
-
-
-
-
-
 /* 
 new chapter
 manipulating attributes
@@ -63,12 +58,40 @@ console.log(headings);
 /* very imp qn */
 // change all the anchor ag into blue
 let links=document.querySelectorAll('.box a') //which is inside the box wala
-links.style.color="green";
-
 // for (let i=0; i < links.length; i++){
 //     links[i].style.color='purple';
 // }
 
 for (link of links ){
-    link.style.color='purple';
+    link.style.color='yellow';
 }
+
+
+
+
+/* new chapter 
+
+Manipulating style */
+
+let headerr =document.querySelector('h1')
+console.log(headerr.classList);
+headerr.classList.add("green");// this will make the changes in the file and giv you the output and yesko bhitra bhaeko classes
+headerr.classList.remove("green");// removes
+headerr.classList.contains("green");// gives true or false
+console.log(headerr.classList.toggle("green"));
+console.log(headerr.classList.toggle("green"));
+
+/* new 
+Navigation
+*/
+
+let h4=document.querySelector('h4');
+console.log(h4.parentElement);
+let box =document.querySelector(".box");
+console.log(box.children);
+console.log(box.childElementCount);
+
+let imagesss = document.querySelector('img');
+console.log(imagesss.previousElementSibling);
+console.log(imagesss.nextElementSibling);
+console.log(console.log(imagesss.previousElementSibling.style.color="green"));
