@@ -1,37 +1,44 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Manipulation</title>
+    <meta charset="UTF-8">
+    <title>Spider-Man</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <h1>Spider Man</h1>
-        <img src="Assets/Spider-Man.png" alt="Spider-Man">
-        <h2>About</h2>
-        <p><b>Spider-Man</b> is a superhero appearing in American comic books published by <a href="https://en.wikipedia.org/wiki/Marvel_Comics">Marvel Comics</a>. 
-            Created by writer-editor <b>Stan Lee</b> and artist <b>Steve Ditko</b>, he first appeared in the anthology comic book <a href="https://en.wikipedia.org/wiki/Amazing_Fantasy">Amazing Fantasy</a> 
-            #15 (August 1962) in the <a href="https://en.wikipedia.org/wiki/Silver_Age_of_Comic_Books">Silver age of Comic Books</a>. He has been featured in comic books, television shows, films, video games, novels, and plays.</p>
-    </div>
-
-    <div class="pubInfo">
+    <h1>Spider-Man</h1>
+    <img src="assets/spiderman-img.png" id="mainImg" alt="Spider-Man Image">
+    
+    <h2>About</h2>
+    <p>
+        <b>Spider-Man</b> is a superhero appearing in American comic books
+        published by <a href="https://www.google.com/search?q=Marvel+Comics">Marvel Comics</a>.
+        Created by writer-editor <b>Stan Lee</b> and artist <b>Steve Ditko</b>, he
+        first appeared in the anthology comic book
+        <a href="https://www.google.com/search?q=Amazing+Fantasy">Amazing Fantasy</a>
+        #15 (August 1962) in the <a href="#">Silver Age of Comic Books</a>. He has
+        been featured in comic books, television shows, films, video games,
+        novels, and plays.
+    </p>
+    
+    <div class="box">
         <h4>Publication Info</h4>
         <ul>
-            <li><a href="https://en.wikipedia.org/wiki/Marvel_Comics">Publisher</a></li>
-            <li><a href="https://en.wikipedia.org/wiki/Amazing_Fantasy">First Appearance</a></li>
-            <li>Created by
+            <li><a href="#" class="boxLink">Publisher</a></li>
+            <li><a href="#" class="boxLink">First Appearance</a></li>
+            <li>Created by:
                 <ul>
-                    <li><a href="https://en.wikipedia.org/wiki/Stan_Lee">Stan Lee</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Steve_Ditko">Steve Ditko</a></li>
+                    <li><a href="#" class="boxLink">Stan Lee</a></li>
+                    <li><a href="#" class="boxLink">Steve Ditko</a></li>
                 </ul>
             </li>
         </ul>
     </div>
-
+    
     <div class="creationDev">
         <h2>Creation And Development</h2>
-        <p id ='description'>
+        <p id='description'>
             In 1962, with the success of the Fantastic Four, Marvel Comics editor and head writer Stan Lee was
             casting for a new superhero idea. He said the idea for Spider-Man arose from a surge in teenage 
             demand for comic books and the desire to create a character with whom teens could identify.[15]:
@@ -43,11 +50,11 @@
         </p>
         <div class="images">
             <img src="Assets/Man.png" alt="Man" class="oldimg">
-            <img src="Assets/Amazing_Fantasy.jpg" alt="Fantasy"class="oldimg">
-            <img src="Assets/Amazing-spiderman.jpg" alt="Spiderman"class="oldimg">
+            <img src="Assets/Amazing_Fantasy.jpg" alt="Fantasy" class="oldimg">
+            <img src="Assets/Amazing-spiderman.jpg" alt="Spiderman" class="oldimg">
         </div>
     </div>
-
+    
     <script src="app.js"></script>
 </body>
 </html>

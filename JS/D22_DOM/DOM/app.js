@@ -44,3 +44,31 @@ console.log(heading);// to display the value of the heading
 // heading.innerHTML="<u> Spiderman </u>";
 heading.innerHTML=`<u> ${heading.innerText}</u>`
 
+
+
+
+
+/* 
+new chapter
+manipulating attributes
+*/
+
+let img =document.querySelector('img')
+console.dir(img);// displays the property 
+
+let headings =document.querySelector('h1')
+console.log(headings);
+
+
+/* very imp qn */
+// change all the anchor ag into blue
+let links=document.querySelectorAll('.box a') //which is inside the box wala
+links.style.color="green";
+
+// for (let i=0; i < links.length; i++){
+//     links[i].style.color='purple';
+// }
+
+for (link of links ){
+    link.style.color='purple';
+}
