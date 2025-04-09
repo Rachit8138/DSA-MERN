@@ -95,3 +95,16 @@ let imagesss = document.querySelector('img');
 console.log(imagesss.previousElementSibling);
 console.log(imagesss.nextElementSibling);
 console.log(console.log(imagesss.previousElementSibling.style.color="green"));
+
+/* 
+Adding element 
+ */
+
+let newP =document.createElement('p');
+console.log(newP);
+newP.innerText="hi i am new p"
+
+let body=document.querySelector('body');
+console.log(body.appendChild(newP));
+newP.append("this is new append")
+console.log(newP);
