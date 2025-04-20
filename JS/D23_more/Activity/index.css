@@ -1,0 +1,11 @@
+div{
+    height: 100px;
+    width:500px;
+    border: 1px solid black;
+}
+
+body{
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+}
