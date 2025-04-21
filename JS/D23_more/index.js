@@ -20,22 +20,43 @@ btn.onclick=function (){// onclick property can be set to a particular function 
 // }
 
 
-//3. Event Listener
-let bt=document.querySelectorAll("button");/*returns a nodelist  */
-for (b of bt){
-    // b.addEventListener("click",sayHel);
-    // b.addEventListener("click",sayName);
-    b.addEventListener("dblclick",function(){
-        console.log("you double clicked");
-    });
+// //3. Event Listener
+// let bt=document.querySelectorAll("button");/*returns a nodelist  */
+// for (b of bt){
+//     // b.addEventListener("click",sayHel);
+//     // b.addEventListener("click",sayName);
+//     b.addEventListener("dblclick",function(){
+//         console.log("you double clicked");
+//     });
+// }
+
+// function sayHel(){
+//     alert("Hello")
+// };
+
+// function sayName(){
+//     alert("Apna College")
+// };
+
+// 4. this
+
+let btn=document.querySelectorAll("button");
+for (b of btn){
+b.addEventListener("click",function(){
+    console.log(this.innerText);
+    this.style.backgroundColor="blue";// to change the color       
+})};
+
+// 5. for multiple btn, p, h1, h3
+
+let p = document.querySelector ("p");
+let h1= document.querySelector ("h1");
+let h3 = document. querySelector ("h3");
+function changeColor() {
+    console.dir(this.innerText);
+    this.style.backgroundColor = "blue";
 }
 
-function sayHel(){
-    alert("Hello")
-};
-
-function sayName(){
-    alert("Apna College")
-};
-
-// 4. 
+p.addEventListener ("click", changeColor);
+h1.addEventListener ("click", changeColor);
+h3.addEventListener("click", changeColor);
