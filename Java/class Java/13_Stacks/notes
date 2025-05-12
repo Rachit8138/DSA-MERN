@@ -1,0 +1,7 @@
+
+Arrays              ArrayList           linkedlist
+fixed size          variable            variable (applied from head) top is head
+                    top is at last 
+
+Stack using collection framework_JCF- easiest implementation
+java collection framework
