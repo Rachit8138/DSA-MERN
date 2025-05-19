@@ -1,9 +1,9 @@
-
+// to understand scope and how the value is passed
 public class a_0 {
-    public static void update(int marks[], int non){
+    public static void update(int m[], int non){
         non=10;
-        for (int i=0;i<marks.length; i++){
-            marks[i]=marks[i]+1;
+        for (int i=0;i<m.length; i++){
+            m[i]=m[i]+1;
         }
     }
     public static void main(String[] args) {

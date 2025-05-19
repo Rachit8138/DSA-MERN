@@ -1,3 +1,4 @@
+// linear search
 /*   public class a_1 {
     public static int linearsearch(int numbers[], int key){
         for (int i=0;i<numbers.length; i++){
