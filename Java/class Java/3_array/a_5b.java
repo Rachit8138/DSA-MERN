@@ -1,3 +1,4 @@
+//max_subarray_sum_kadanes_algorithm
 public class a_5b {
 
     public static void kadanes( int num []){
