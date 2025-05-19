@@ -3,7 +3,6 @@ public class a_3 {
         int start = 0, end = numbers.length - 1;
         while (start <= end) {
             int mid = (start + end) / 2;
-            
             // comparisons
             if (numbers[mid] == key) { // found
                 return mid;
@@ -12,9 +11,7 @@ public class a_3 {
                 start = mid + 1;
             } else { // left
                 end = mid - 1;
-            }
-            
-            
+            }    
         }
         return -1;
     }
