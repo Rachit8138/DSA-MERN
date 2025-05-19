@@ -8,7 +8,7 @@ public class a4_PushAtBottom {
         }
         int top = s.pop();
         pushAtBottom(s, data);
-        s.push(top)
+        s.push(top);
     }
     public static void main(String args[]) {
         Stack<Integer> s = new Stack<>();
