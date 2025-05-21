@@ -79,11 +79,12 @@ public class a_6 {
 
         public static void main(String args[]) {
             int arr[] = { 5, 4, 9, 1, 2, 3 };
-            bubbleSort(arr);
-            selectionSort(arr);
-            insertionSort(arr);
+            // bubbleSort(arr);
+            // selectionSort(arr);
+            // insertionSort(arr);
             countingSort(arr);
-            Arrays.sort(arr);
+            // Arrays.sort(arr);
+            printarray(arr);
         }
 
 }
