@@ -1,6 +1,11 @@
+// Leetcode 
 public class ProductExceptSelf {
 
     public static int[] productExceptSelf(int[] nums) {
+        //exception case
+        if (nums.length==1){
+            return nums;
+        }
         int n = nums.length;
 
         int[] prefix = new int[n];
