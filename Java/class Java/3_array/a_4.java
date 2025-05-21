@@ -18,16 +18,12 @@ public class a_4 {
                 // Comparing current sum and max sum 
                 if(currentSum > maxSum ){
                     maxSum = currentSum;
-                } 
+                }
             }System.out.println();
         }System.out.println("Max sum of an array is : "+maxSum);
     }
-
-
     public static void main(String args[]) {
         int num[] = {1,2,3,4,5};
         Max_subarray(num);
-        
     }
-    
 }
