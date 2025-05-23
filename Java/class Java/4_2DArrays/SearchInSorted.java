@@ -1,5 +1,3 @@
-import java.util.*;
-
 //Problem : Search for key in sorted matrix
 
 public class SearchInSorted {
@@ -20,7 +18,6 @@ public class SearchInSorted {
             else if(matrix[i][j] > key) {
                 j--;
             }
-
         }
 
         System.out.println("NOT Found");

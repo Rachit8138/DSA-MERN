@@ -14,7 +14,7 @@ public class TrappingRainWater {
         for(int i=1; i<n; i++) {
             leftMax[i] = Math.max(leftMax[i-1], height[i]);
         }
-        
+            
         for(int i=n-2; i>=0; i--) {
             rightMax[i] = Math.max(rightMax[i+1], height[i]);
         }
