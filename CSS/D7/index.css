@@ -1,0 +1,46 @@
+div {
+    height: 200px;
+    width: 500px; 
+    background-color: pink;
+    /* border-top: 5px dashed blue; */
+
+    border: 5px solid black ;
+ /*    border-radius: 50px; */
+
+    border-radius: 10px;
+    
+}
+
+h1 {
+        /* border */
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: black; */
+    border: 2px dashed green;
+    border-radius: 10px;
+    padding-top:10px;
+    margin:20px;
+
+    /* div is a block element so it covers whole page */
+
+    
+}
+
+button {
+    width: 200px;
+
+    border: 2px solid black; 
+    border-radius: 10px; 
+    padding: 25px;
+    background-color: yellow;
+}
+/* here we know that h2 is a block but acting as an inline */
+h2{
+    display: inline;
+    background-color: aliceblue;
+}
+
+span{
+    display: block;
+    background-color: green;
+}

@@ -1,0 +1,8 @@
+#box1{
+    height: 150px;
+    width:300px;
+    background-color: grey;
+    border: 5px dotted border black;
+    margin: 20px 1em 40px 2em;
+    padding: 1em;
+}

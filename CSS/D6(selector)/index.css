@@ -1,0 +1,86 @@
+*{
+    font-family: "Courier New";
+}
+
+
+
+h1,h3
+{
+    color:#b92b27;
+
+}
+
+#login {
+background-color: white;
+}
+
+#signup{
+    background-color: #b92b27;
+    color:white;
+}
+
+.upvote{
+    background-color: green;
+    color:aliceblue;
+}
+
+/* 
+practice qn 
+-set the color paragraphs inside divs with the id="myId" to green
+divs(my id)--> color:green;
+*/
+#myid{/* myid ko p wala paragraph*/
+    color:orange;
+}
+
+/* descendant selector */
+p a{/* p ko bhitra ko a*/
+    color:purple;
+    background-color: yellow;
+}
+
+nav a{
+    color:hotpink;
+}
+
+/* this means p pachi immediately h3 aaune wala haru lae changes*/
+p+h3{
+    text-decoration: underline;
+}
+/* upvote class ko immediately pachi button ko change */
+.upvote+button{
+    background-color: cornflowerblue;
+    color:darkblue;
+}
+
+div > input{
+    background-color: darksalmon;
+}
+
+/* Attribute selector */
+input[type="password"]{
+    color:red;
+}
+
+input[type]{
+    background-color: ghostwhite;
+}
+myId p{
+    color:green;
+}
+
+button:hover{
+    background-color: black;
+    color:white;
+}
+
+button:active{
+    background-color:hotpink;
+    color:black;
+}
+
+p:active{
+    font-weight:bold;
+    color:green;
+    
+}
