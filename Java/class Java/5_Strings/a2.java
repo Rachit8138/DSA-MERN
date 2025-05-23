@@ -28,5 +28,5 @@ public class a2 {
         countVowel(str);
         Anagram(str, str2);   //frequency of each character in both the string same
 
-    }x
+    }
 }

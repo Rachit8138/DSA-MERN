@@ -29,6 +29,27 @@ public class SearchInSorted {
                         {27, 29, 37, 48},
                         {32, 33, 39, 50}};
         int key = 33;
-        staircaseSearch(matrix, key);
+        // staircaseSearch(matrix, key);
+        System.out.println(searchMatrix(matrix,key));
+    }
+
+    public boolean searchMatrix(int[][] matrix, int target) {
+        int start =0, end = matrix[0].length-1, i=0;
+        while (start<=end){
+            int mid =(start+end)/2;
+            
+            if (matrix[i][mid]==target){
+                return true;
+            }else if (matrix[i][mid]<target){
+                start = mid+1;
+            }else {
+                end= mid-1;
+            }
+            
+            if(matrix[i][mid-1]<target && target<matrix[i][mid+1] ){
+                i++;
+            }
+        }
+        return false;
     }
 }
