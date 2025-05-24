@@ -26,12 +26,16 @@ public class Main {
     public static void substring(String str){
 
     }
+
     public static void main(String args[]) {
+        
         String path="NSWWWS";
         shortestPath(path);
+        palindrome(path);
 
-        String str="HelloWorld";
-        System.out.println(str.substring(0,5));
+
+        // String str="HelloWorld";
+        // System.out.println(str.substring(0,5));
 
 
 
