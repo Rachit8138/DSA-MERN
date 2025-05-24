@@ -1,4 +1,4 @@
-public class Main {
+public class shortestPath {
     public static void shortestPath(String path){
         int x=0, y=0;
 
@@ -31,8 +31,6 @@ public class Main {
         
         String path="NSWWWS";
         shortestPath(path);
-        palindrome(path);
-
 
         // String str="HelloWorld";
         // System.out.println(str.substring(0,5));
