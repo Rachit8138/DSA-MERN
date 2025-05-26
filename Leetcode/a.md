@@ -1,3 +1,4 @@
+willianfist
 How to start leetcode:
 1. time and space complexity
 Basic 
@@ -30,7 +31,7 @@ extension if you cannot solve mark it as important
 
 memorising is not good, 
 
-leetcode timer, leetcode contest. 
+leetcode timer extension , leetcode contest. 
 premium: premium qn, company, visual solution. 
 
 
@@ -41,3 +42,5 @@ solve company specific problems
 
 don't write very very decorative notes try to make your notes in code witht comments 
 
+# 1. go to the interviews 
+# 2. 
