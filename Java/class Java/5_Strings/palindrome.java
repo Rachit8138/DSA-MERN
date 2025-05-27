@@ -2,6 +2,7 @@
 public class palindrome {
 
     public static boolean isPalindrome(String str) {
+        str = str.toLowerCase().replaceAll("[^a-z0-9]", "");
         for(int i=0; i<str.length()/2; i++) {
             if(str.charAt(i) != str.charAt(str.length()-i-1)) return false;
         }

@@ -1,11 +1,8 @@
 public class string_compress {
 
-    public static String compressed(String str) {
-
+    public static int compressed(String str) {
         StringBuilder sb = new StringBuilder("");
-
         for (int i = 0; i < str.length(); i++) {
-
             Integer count = 1;
             // str.length()-1 because we are checking is the next element is same for that
             // there should be a next element so we added -1
@@ -14,14 +11,11 @@ public class string_compress {
                 i++;
             }
             sb.append(str.charAt(i));
-
             if (count > 1) {
                 sb.append(count);
             }
-
         }
-
-        return sb.toString();
+        return (sb.toString()).length();
     }
 
     public static void main(String args[]) {

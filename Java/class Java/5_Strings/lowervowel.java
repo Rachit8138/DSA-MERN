@@ -27,7 +27,6 @@ public class lowervowel {
             // Sort the char arrays
             Arrays.sort(str1CharArray);
             Arrays.sort(str2CharArray);
-
             // Compare the sorted char arrays
             boolean result = Arrays.equals(str1CharArray, str2CharArray);
 
