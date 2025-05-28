@@ -1,27 +1,25 @@
 public class a {
-    public int compress(char[] chars) {
-        StringBuilder sb = new StringBuilder("");
-        for (int i = 0; i < chars.length; i++) {
-            Integer count = 1;
-            while (i < chars.length - 1 && chars[i] == chars[i + 1]) {
-                count++;
-                i++;
-            }
-            sb.append(chars[i]);
-            if (count > 1) {
-                sb.append(count);
+     // comme
+    public static String reverseWords(String s) {
+        s=s.trim();
+        StringBuilder sum= new StringBuilder();
+        int a=s.length();
+        for (int i=s.length()-1;i>=0;i--){
+            if (s.charAt(i) == ' '){
+                if (!s.substring(i+1, a).equals("")){
+                sum = sum + s.substring(i+1, a) + " ";
+                }
+                System.out.println(sum);
+                a=i;
             }
         }
-        return sb.length();
+        sum=sum+s.substring(0, a);
+        return sum;
     }
-
     public static void main(String[] args) {
-        char[] chars = {'a','b','b','b','b','b','b','b','b','b','b','b','b'};
-        
-        // ✅ Create an object of class 'a'
-        a obj = new a();
-        
-        // ✅ Call the method through the object
-        System.out.println(obj.compress(chars));
+    
+        String s="a good      example";
+        System.out.println(reverseWords(s));
+
     }
 }
