@@ -36,18 +36,11 @@ public class a1 {
         // else{
         // set_ith_Bit(a, i);
         // }
-
-        // a = clr_ith_Bit(a, i);
-        // int BitMask = newBit << i;
-        // System.out.println(a | BitMask);
-
-        
-        int bitmask=~(1<<i);
-        a= a & bitmask;
-        bitmask=newBit<<i;
-        System.out.println(a|bitmask);
+      int BitMask = ~(1 << i);
+      a &= BitMask;
+      BitMask = newBit << i;
+      System.out.println(a | BitMask);
     }
-
     public static void clr_last_ith_Bit(int a, int i) {
         int bitMask = (~0) << i;
         System.out.println(a & bitMask);
@@ -60,12 +53,8 @@ public class a1 {
         System.out.println(n & bitmask);
     }
 
-    public static void ispoweroftwo(int n) {
-        if ((n & (n - 1)) == 0) {
-            System.out.println("true");
-        } else {
-            System.out.println("false");
-        }
+    public static boolean ispoweroftwo(int n) {
+        return (n & (n - 1)) == 0;
     }
 
     public static void count_set_bit(int n){
@@ -98,7 +87,7 @@ public class a1 {
         upd_ith_Bit(15, 2, 1);
         clr_range_ith_Bit(10, 2, 4);
         clr_last_ith_Bit(15, 2);
-        ispoweroftwo(8);
+        System.out.println(ispoweroftwo(9));
         count_set_bit(15);
         fast_expo(5,3);
     }
