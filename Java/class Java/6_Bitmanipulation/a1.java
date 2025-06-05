@@ -41,12 +41,12 @@ public class a1 {
       BitMask = newBit << i;
       System.out.println(a | BitMask);
     }
-    public static void clr_last_ith_Bit(int a, int i) {
+    public static void clr_last_i_Bit(int a, int i) {
         int bitMask = (~0) << i;
         System.out.println(a & bitMask);
     }
-
-    public static void clr_range_ith_Bit(int n, int i, int j) {
+/* note: its i bit not ith bit */
+    public static void clr_range_Bit(int n, int i, int j) {
         int a = (~0) << (j + 1);
         int b = (1 << i) - 1;
         int bitmask = a | b;
@@ -80,15 +80,15 @@ public class a1 {
         System.out.println(ans);
     }       
     public static void main(String args[]) {
-        oddoreven_using_and(3);
-        get_ith_Bit(15, 2); // with which you will be adding or something that is called bitmask
-        set_ith_Bit(10, 2); // remember the concept of bitmask
-        clr_ith_Bit(10, 1);
-        upd_ith_Bit(15, 2, 1);
-        clr_range_ith_Bit(10, 2, 4);
-        clr_last_ith_Bit(15, 2);
-        System.out.println(ispoweroftwo(9));
-        count_set_bit(15);
-        fast_expo(5,3);
+        // oddoreven_using_and(3);
+        // get_ith_Bit(15, 2); // with which you will be adding or something that is called bitmask
+        // set_ith_Bit(10, 2); // remember the concept of bitmask
+        // clr_ith_Bit(10, 1);
+        // upd_ith_Bit(15, 2, 1);
+        clr_range_Bit(10, 2, 4);
+        // clr_last_i_Bit(123, 3);
+        // System.out.println(ispoweroftwo(9));
+        // count_set_bit(15);
+        // fast_expo(5,3);
     }
 }
