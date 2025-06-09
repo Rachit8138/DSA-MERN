@@ -1,6 +1,6 @@
 /* 
     DSA Sheet No. 22 
-    Topic - Arrays
+    Topic - Arrays   
     Level - Medium
 */
 public class TrappingRainWater {

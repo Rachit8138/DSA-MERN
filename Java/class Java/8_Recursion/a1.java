@@ -1,7 +1,17 @@
 public class a1 {
-    public static void PrintDec(int n){
+    public static void pattern(int n){
+        //recursive case 
         if(n==1){
-        System.out.println(n);
+            System.out.print("1"+" ");
+            return;
+        }
+        //base case
+        System.out.print(n+" ");
+        pattern(n-1);
+        System.out.print(n+" ");
+    }
+    public static void PrintDec(int n){
+        if(n==0){
         return;
         }
         System.out.print(n+" ");
@@ -9,9 +19,9 @@ public class a1 {
     }
 
     public static void PrintInc(int n){
-        if(n==1){
+        if(n==0){
             System.out.print(n+" ");
-            return;
+            return; 
             }   
             PrintInc(n-1);
         System.out.print(n+" ");
@@ -55,14 +65,14 @@ public class a1 {
 
     public static int last_occ(int arr[], int key, int c){ // 
         
-        if (c==-1){
+        if( c==arr.length){
             return -1;
         }
-        if (arr[c] == key){
+        int isFound =last_occ(arr, key, c+1);
+        if(isFound==-1 && arr[c]== key){
             return c;
         }
-
-        return last_occ(arr, key, c-1);
+        return isFound;
     }
 
     public static int power(int x, int n){
@@ -91,6 +101,7 @@ public class a1 {
     }
 
     public static void main(String[] args) {
+        pattern(5);
         // PrintDec(10);
         // PrintInc(10);
         // System.out.println(fact(11));        // factorial
@@ -104,7 +115,7 @@ public class a1 {
         // System.out.println(power(2, 8));                //x^n
 
         // // optimized x^n
-        System.out.println(optim_pwr(2, 7));
+        // System.out.println(optim_pwr(2, 7));
 
     }
 }
