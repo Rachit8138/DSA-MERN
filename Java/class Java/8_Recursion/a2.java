@@ -47,9 +47,21 @@ public class a2 {
     }
 }
 
+public static int friendspairing(int n){
+    //base case
+    if(n==1|| n==2){
+        return n;
+    }
+    return friendspairing(n-1)+(n-1)*friendspairing(n-2);
+
+    //recursive case
+
+}
+
      public static void main(String args[]) {
-        towerOfHanoi(7, "A", "B", "C");
+        // towerOfHanoi(7, "A", "B", "C");
         //System.out.println(Tilingproblem(8   ));
         //removeDuplicates("hellow  orld",0,new StringBuilder(""), new boolean[26] );
+        System.out.println(friendspairing(3));
     }
 }
