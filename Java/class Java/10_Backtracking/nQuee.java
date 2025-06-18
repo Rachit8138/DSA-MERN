@@ -1,4 +1,4 @@
-public class NQueens {
+public class nQuee {
     // IF SOLUTION EXISTS OR NOT
     public static boolean checkNQueens(char board[][], int row) {
         if(row == board.length) {
@@ -28,7 +28,7 @@ public class NQueens {
                 board[i][j] = 'x';
             }
         }
-        //nQueens(board, 0);
+        nQueens(board, 0);
         System.out.println("Total number of ways = "+ countWays);
         //--------------------------------------
         if(checkNQueens(board, 0)) {
