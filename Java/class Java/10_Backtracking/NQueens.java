@@ -21,7 +21,7 @@ public class NQueens {
     // the 2D array board. because 2d array is basically array of array 
     // which counts every array as a separate number
     public static void main(String args[]) {
-        int n = 5;
+        int n = 6;
         char board[][] = new char[n][n];
         for(int i=0; i<n; i++) {
             for(int j=0; j<n; j++) {
