@@ -1,6 +1,6 @@
 public class h3 {
     // Define the size of the chessboard
-    static int N = 8;
+    static int N =8;
 
     // Function to print the solution matrix
     public static void printSolution(int sol[][]) {
@@ -9,36 +9,7 @@ public class h3 {
                 System.out.print(sol[x][y] + " ");
             System.out.println();
         }
-    }
-
-    // Main function to solve the Knight's Tour problem
-    public static boolean solveKT() {
-        int sol[][] = new int[8][8];
-
-        // Initialize the solution matrix with -1
-        for (int x = 0; x < N; x++){
-            for (int y = 0; y < N; y++){
-                sol[x][y] = -1;
-            }
-        }           
-
-        // xMove[] and yMove[] define next move of Knight
-        int xMove[] = {2, 1, -1, -2, -2, -1, 1, 2};
-        int yMove[] = {1, 2, 2, 1, -1, -2, -2, -1};
-
-        // The Knight starts from the first cell (0, 0)
-        sol[0][0] = 0;
-
-        // Start the recursive utility function to solve the problem
-        if (!solveKTUtil(0, 0, 1, sol, xMove, yMove)) {
-            System.out.println("Solution does not exist");
-            return false;
-        } else {
-            printSolution(sol);
-        }
-n  
-        return true;
-    }
+    }  
 
     // Utility function to solve the Knight's Tour problem using backtracking
     public static boolean solveKTUtil(int x, int y, int movei, int sol[][], int xMove[], int yMove[]) {
@@ -72,6 +43,29 @@ n
 
     // Main method to run the program
     public static void main(String args[]) {
-        solveKT();
+       int sol[][] = new int[8][8];
+
+        // Initialize the solution matrix with -1
+        for (int x = 0; x < N; x++){
+            for (int y = 0; y < N; y++){
+                sol[x][y] = -1;
+            }
+        }           
+
+        // xMove[] and yMove[] define next move of Knight
+        int xMove[] = {2, 1, -1, -2, -2, -1, 1, 2};
+        int yMove[] = {1, 2, 2, 1, -1, -2, -2, -1};
+
+        // The Knight starts from the first cell (0, 0)
+        sol[0][0] = 0;
+
+        // Start the recursive utility function to solve the problem
+        if (!solveKTUtil(0, 0, 1, sol, xMove, yMove)) {
+            System.out.println("Solution does not exist");
+        } else {
+            printSolution(sol);
+        }
+        }
+
     }
-}
+

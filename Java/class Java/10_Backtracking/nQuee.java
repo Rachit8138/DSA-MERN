@@ -21,15 +21,15 @@ public class nQuee {
     // the 2D array board. because 2d array is basically array of array 
     // which counts every array as a separate number
     public static void main(String args[]) {
-        int n = 6;
+        int n = 4;
         char board[][] = new char[n][n];
         for(int i=0; i<n; i++) {
             for(int j=0; j<n; j++) {
                 board[i][j] = 'x';
             }
         }
-        nQueens(board, 0);
-        System.out.println("Total number of ways = "+ countWays);
+        // nQueens(board, 0);
+        // System.out.println("Total number of ways = "+ countWays);
         //--------------------------------------
         if(checkNQueens(board, 0)) {
             System.out.println("solution exists");

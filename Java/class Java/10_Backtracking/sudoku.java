@@ -30,7 +30,7 @@ public class sudoku {
         //     return false;
         // }
         // recursion
-        int nextRow = row; int nextCol = col+1;
+        int nextRow = row, nextCol = col+1;
         if(nextCol == 9){
             nextRow = row+1;
             nextCol = 0;
