@@ -1,5 +1,4 @@
-![alt text](image.png)
-![alt text](image-2.png)
+![alt text](image-1.png)
 
 Optimization Tools to Reduce Complexity
 
