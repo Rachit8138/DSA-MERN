@@ -81,6 +81,5 @@ public class Classroom {
         list.add(10);
         int target = 100;
         System.out.println(pairSum2(list, target));
-        
     }
 }

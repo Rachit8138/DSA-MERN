@@ -24,3 +24,6 @@ If n is around 10^5, avoid O(n^2) — it's too slow.
 If n is near 10^9, only O(log n) or O(1) will work — think binary search or mathematical tricks.
 
 Always check for optimizations before finalizing brute-force.
+
+
+
