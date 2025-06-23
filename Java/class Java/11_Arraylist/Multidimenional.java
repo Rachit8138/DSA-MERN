@@ -16,6 +16,8 @@ public class Multidimenional {
         mainList.add(list2);
         mainList.add(list3);
 
+        System.out.println(mainList);
+
         //print all numbers
         for(int i=0; i<mainList.size(); i++) {
             ArrayList<Integer> currList = mainList.get(i);

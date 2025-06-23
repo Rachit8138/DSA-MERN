@@ -7,7 +7,7 @@ public class a1 {
             // if(max < list.get(i)) {
             //     max = list.get(i);
             // }
-            int a = list.get(0); // Initialize with the first element
+            int a = /* Integer.MIN_VALUE */ list.get(0); // Initialize with the first element
 
             for (int i = 0; i < list.size(); i++) {
                 a = Math.max(a, list.get(i)); // Compare and update max
@@ -22,8 +22,10 @@ public class a1 {
         list.add(4);
         list.add(5);
         list.add(1,9);
+        list.set(2,10);
         System.out.println(list);
         
-        printMax(list);
+        
+        // printMax(list);
     }
 }
