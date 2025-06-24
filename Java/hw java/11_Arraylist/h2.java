@@ -1,6 +1,14 @@
 import java.util.ArrayList;
 
 public class h2 {
+    /* 
+     
+    constraints
+    Constraints :
+● 2 <= nums.size() <= 1000-> O(n^2)
+● 1 <= nums.get(i) <= 1000.->value cannot be more than 1000
+● Assume that the answer is unique.
+     */
 
     public static int mostFrequent(ArrayList<Integer> nums, int key) {
         int[] count = new int[1001]; // Array for counting numbers, assuming numbers are in the range 0-1000
@@ -37,3 +45,11 @@ public class h2 {
         System.out.println(mostFrequent(A, 5)); // Should return the most frequent number that follows 5
     }
 }
+
+/* 
+ 
+✅ Final Time Complexity: O(n)
+space complexity 0(1)
+​
+
+ */
