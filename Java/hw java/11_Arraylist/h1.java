@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 import java.util.Collections;
-
+// leetcode 2150
 public class h1 {
-
+// leetcode 896
     public static boolean isMonotonic(ArrayList<Integer> A) {
         boolean inc = true;
         boolean dec = true;
@@ -20,42 +20,41 @@ public class h1 {
 
     }
 
-    public static ArrayList<Integer> findLonely(ArrayList<Integer> nums) {
-        // Sort the list
-        Collections.sort(nums);
-        // list to hold lonely integer
-        ArrayList<Integer> list = new ArrayList<>();
+//     public static ArrayList<Integer> findLonely(ArrayList<Integer> nums) {
+//         // Sort the list
+//         Collections.sort(nums);
+//         // list to hold lonely integer
+//         ArrayList<Integer> list = new ArrayList<>();
 
-        // Handle edge case where the list has only one element
-        if (nums.size() == 1) {
-            list.add(nums.get(0));
-            return list;
-        }
+//         // Handle edge case where the list has only one element
+//         if (nums.size() == 1) {
+//             list.add(nums.get(0));
+//             return list;
+//         }
 
-/* Note
-hered we have done first and last separately because if you check it continously then both will be added
-ie[1, 10, 4,6] in this manner
- * 
- */
-        // Check the first element
-        if (nums.size() > 1 && nums.get(0) + 1 < nums.get(1)) {
-            list.add(nums.get(0));
-        }
+// /* Note
+// hered we have done first and last separately because if you check it continously then both will be added
+// ie[1, 10, 4,6] in this manner
+//  * 
+//  */
+//         // Check the first element
+//         if (nums.size() > 1 && nums.get(0) + 1 < nums.get(1)) {
+//             list.add(nums.get(0));
+//         }
 
-        // Check the elements between the first and last
-        for (int i = 1; i < nums.size() - 1; i++) {
-            if (nums.get(i - 1) + 1 < nums.get(i) && nums.get(i) + 1 < nums.get(i + 1)) {
-                list.add(nums.get(i));
-            }
-        }
+//         // Check the elements between the first and last
+//         for (int i = 1; i < nums.size() - 1; i++) {
+//             if (nums.get(i - 1) + 1 < nums.get(i) && nums.get(i) + 1 < nums.get(i + 1)) {
+//                 list.add(nums.get(i));
+//             }
+//         }
+//         // Check the last element
+//         if (nums.size() > 1 && nums.get(nums.size() - 2) + 1 < nums.get(nums.size() - 1)) {
+//             list.add(nums.get(nums.size() - 1));
+//         }
 
-        // Check the last element
-        if (nums.size() > 1 && nums.get(nums.size() - 2) + 1 < nums.get(nums.size() - 1)) {
-            list.add(nums.get(nums.size() - 1));
-        }
-
-        return list;
-    }
+//         return list;
+//     }
 
     public static void main(String[] args) {
         ArrayList<Integer> A = new ArrayList<Integer>();
@@ -66,9 +65,36 @@ ie[1, 10, 4,6] in this manner
         A.add(5);
 
         ArrayList<Integer> nums = A;
-        System.out.println(isMonotonic(A));
+        // System.out.println(isMonotonic(A));
 
         System.out.println(findLonely(nums));
 
+    }
+    public static ArrayList<Integer> findLonely(ArrayList<Integer> nums) {
+        Collections.sort(nums);
+        ArrayList<Integer> temp=new ArrayList<>();
+        // edge case where input is 1
+        if(nums.size()==1){
+            temp.add(nums.get(0));
+            return temp;
+        }
+         // Check the first element
+        if (nums.get(0) + 1 < nums.get(1)) {
+            temp.add(nums.get(0));
+        }
+
+
+        
+
+        // for the middle portion
+         for(int i=1;i<nums.size()-1;i++){
+            if(!(nums.get(i-1)<=nums.get(i) || nums.get(i)>=nums.get(i+1))) temp.add(nums.get(i));
+         }
+
+         // Check the last element
+        if (nums.get(nums.size() - 2) + 1 < nums.get(nums.size() - 1)) {
+            temp.add(nums.get(nums.size() - 1));
+        }
+        return temp;
     }
 }   

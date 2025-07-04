@@ -1,8 +1,10 @@
 public class LinkedList {
     public static class Node {
-        //This class will be used to represent individual elements (or "nodes") of the linked list. It's marked static, meaning it belongs to the outer class (LinkedList) and doesn't need an instance of the outer class to be created.
+        //This class will be used to represent individual elements (or "nodes") of the linked list. 
+        // It's marked static, meaning it belongs to the outer class (LinkedList) and doesn't need an 
+        // instance of the outer class to be created.
         int data;
-        Node next;  //node type. variable next that holds a reference to the next Node
+        Node next;  //node type. holds a reference to the next Node
 
         public Node(int data) {//onstructor of the Node class. obj made from this will be entire linked list
             this.data = data;// iBAsically initializest assigns the value to the node’s data field   
@@ -17,12 +19,8 @@ public class LinkedList {
         //step1 = create new node 
         Node newNode = new Node(data);
         size++;
-        if(head == null) {
-            head = tail = newNode;
-            return;
-        }
         //step2 - newNode next = head
-        newNode.next = head; //link
+        newNode.next = head; //link-
 
         //step3 - head = newNode
         head = newNode;
@@ -58,17 +56,17 @@ public class LinkedList {
         // create a node
         Node newNode = new Node(data);
         size++;
-        Node temp = head;
+        Node prev = head;
         int i = 0;
         // go upto idx-1 so that you have prev and next
         while(i < idx-1) {
-            temp = temp.next;
+            prev = prev.next;
             i++;
         }
 
-        //i = idx-1; temp -> prev
-        newNode.next = temp.next;
-        temp.next = newNode;
+        //i = idx-1; prev -> prev
+        newNode.next = prev.next;
+        prev.next = newNode;
     }
 
     public int removeFirst() {
@@ -112,7 +110,7 @@ public class LinkedList {
 
     /* public int itrSearch(int key) { //O(n)
         Node temp = head;
-        int i = 0;
+        int i = 0;  
 
         while(temp != null) {
             if(temp.data == key) { //key found
@@ -125,7 +123,7 @@ public class LinkedList {
         //key not found
         return -1;
     }
-
+        //recursion search 
     public int helper(Node head, int key) { // O(n)
         if(head == null) {
             return -1;
@@ -316,7 +314,6 @@ public class LinkedList {
             head1 = head1.next;
             temp = temp.next;
         }
-
         while(head2 != null) {
             temp.next = head2;
             head2 = head2.next;

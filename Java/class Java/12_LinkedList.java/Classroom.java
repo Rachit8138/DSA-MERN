@@ -18,6 +18,6 @@ public class Classroom {
         System.out.println(ll);
     }
 
-    // see here you mc, this is easier approach but in interivew you will be asked to do from scratch, 
-    //DSA means building from scratch so you will need to know teh scratched approach too
+    // see here you mc, madarbhagat, taile  sajilo chij khojcha, this is easier approach but in interivew you will be asked to do from scratch, 
+    //leetcode you can do from this DSA means building from scratch so you will need to know teh scratched approach too
 }

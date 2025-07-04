@@ -1,3 +1,4 @@
+# REVISE 
 willianfist How to start leetcode:
 
 time and space complexity Basic
@@ -30,3 +31,34 @@ don't write very very decorative notes try to make your notes in code witht comm
 
 1. go to the interviews
 2.
+
+
+
+# NOTES MAKING (common library)
+1. Your own notes,
+
+# when to make notes
+1. variable, if else, loop function donot make notes but practice
+
+2. New data structure 
+a. definition. 
+b. operation. 
+c. Sampe code. 
+d. implementation
+
+3. algorithm / classical questions: 
+# tips and tricks 
+# why the avg is O(n2) qucik sort 
+
+# do the notes in notebook 
+
+# HOW TO MAKE NOTES
+# Logic, formulat, diagrams, pseudocode, special notes
+
+# write the function note the whole code or pseudocode
+
+# mention time and space complexity 
+#
+ 
+
+ 

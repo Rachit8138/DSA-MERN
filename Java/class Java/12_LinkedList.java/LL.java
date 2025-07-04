@@ -2,11 +2,13 @@ public class LL {
     public static class Node {
         int data;
         Node next;
+
         public Node(int data) {
             this.data = data;
             this.next = null;
         }
     }
+
     public static Node head;
     public static Node tail;
     public static int size;
@@ -14,7 +16,7 @@ public class LL {
     public void addFirst(int data) {
         size++;
         Node newNode = new Node(data);
-        if(head == null) {
+        if (head == null) {
             head = tail = newNode;
         } else {
             newNode.next = head;
@@ -25,7 +27,7 @@ public class LL {
     public void addLast(int data) {
         size++;
         Node newNode = new Node(data);
-        if(head == null) {
+        if (head == null) {
             head = tail = newNode;
         } else {
             tail.next = newNode;
@@ -35,39 +37,39 @@ public class LL {
 
     public void print() {
         Node temp = head;
-        while(temp != null) {
-            System.out.print(temp.data+"->");
+        while (temp != null) {
+            System.out.print(temp.data + "->");
             temp = temp.next;
         }
         System.out.println("null");
     }
 
     public void add(int idx, int data) {
-        if(idx == 0) {
+        if (idx == 0) {
             addFirst(data);
             return;
         }
         size++;
         Node temp = head;
         int i = 0;
-        while(temp != null) {
-            if(i == idx-1) {//add here
+        while (temp != null) {
+            if (i == idx - 1) {// add here
                 Node newNode = new Node(data);
-                //insertion at middle
+                // insertion at middle
                 newNode.next = temp.next;
                 temp.next = newNode;
                 return;
             }
             temp = temp.next;
             i++;
-        } 
+        }
     }
 
     public int removeFirst() {
-        if(size == 0) {
+        if (size == 0) {
             System.out.println("empty LL");
             return Integer.MIN_VALUE;
-        } else if(size == 1) {
+        } else if (size == 1) {
             int val = head.data;
             head = tail = null;
             size = 0;
@@ -80,10 +82,10 @@ public class LL {
     }
 
     public int removeLast() {
-        if(size == 0) {
+        if (size == 0) {
             System.out.println("empty LL");
             return Integer.MIN_VALUE;
-        } else if(size == 1) {
+        } else if (size == 1) {
             int val = head.data;
             head = tail = null;
             size = 0;
@@ -91,7 +93,7 @@ public class LL {
         }
 
         Node temp = head;
-        for(int i=0; i<size-2; i++) {
+        for (int i = 0; i < size - 2; i++) {
             temp = temp.next;
         }
         int val = temp.data;
@@ -101,13 +103,13 @@ public class LL {
         return val;
     }
 
-    //Iterative
+    // Iterative
     public int itSearch(int key) {
         Node temp = head;
         int i = 0;
 
-        while(temp != null) {
-            if(temp.data == key) {
+        while (temp != null) {
+            if (temp.data == key) {
                 return i;
             }
             temp = temp.next;
@@ -121,18 +123,18 @@ public class LL {
     }
 
     public int searchHelper(Node head, int key) {
-        if(head == null) {
+        if (head == null) {
             return -1;
         }
-        if(head.data == key) {
+        if (head.data == key) {
             return 0;
         }
 
         int idx = searchHelper(head.next, key);
-        if(idx == -1) {
+        if (idx == -1) {
             return idx;
         }
-        return idx+1;
+        return idx + 1;
     }
 
     public void reverse() {
@@ -140,46 +142,47 @@ public class LL {
         Node curr = tail = head;
         Node next;
 
-        while(curr != null) {
-            next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
+        while (curr != null) {
+            next = curr.next; // Save the next node
+            curr.next = prev; // Reverse the link
+            prev = curr; // Move prev one step ahead
+            curr = next; // Move curr one step ahead
         }
+
         head = prev;
     }
 
     public void removeNthfromEnd(int n) {
-         //size
-         int size = 0;
-         Node temp = head;
-         while(temp != null) {
-             temp = temp.next;
-             size++;
-         }
-         //if we have to remove the head
-         if(n == size) {
-             head = head.next;
-             return;
-         }
-         
-         int i = 1;
-         int itf = size-n;
-         Node prev = head;
-         while(i < itf) { //try to find the node previous of nth
-             prev = prev.next;
-             i++;
-         }
-         prev.next = prev.next.next; 
+        // size
+        int size = 0;
+        Node temp = head;
+        while (temp != null) {
+            temp = temp.next;
+            size++;
+        }
+        // if we have to remove the head
+        if (n == size) {
+            head = head.next;
+            return;
+        }
+
+        int i = 1;
+        int itf = size - n;
+        Node prev = head;
+        while (i < itf) { // try to find the node previous of nth
+            prev = prev.next;
+            i++;
+        }
+        prev.next = prev.next.next;
     }
 
     private Node findMidNode(Node head) {
         Node slow = head;
         Node fast = head.next;
-        //important because we want final mid to be end of 1st half in even case, 
-        //not start of 2nd half. Because mid.next is start of 2nd half.
+        // important because we want final mid to be end of 1st half in even case,
+        // not start of 2nd half. Because mid.next is start of 2nd half.
 
-        while(fast!= null && fast.next!=null) {
+        while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
@@ -187,16 +190,16 @@ public class LL {
     }
 
     public boolean checkPalindrome() {
-        if(head == null || head.next == null) {
+        if (head == null || head.next == null) {
             return true;
         }
-        //find middle
+        // find middle
         Node mid = findMidNode(head);
 
-        //Reverse 2nd half
+        // Reverse 2nd half
         Node curr = mid;
         Node prev = null;
-        while(curr != null) {
+        while (curr != null) {
             Node next = curr.next;
             curr.next = prev;
             prev = curr;
@@ -204,9 +207,9 @@ public class LL {
         }
         Node right = prev;
         Node left = head;
-        //check if equal
-        while(right != null) {
-            if(left.data != right.data) {
+        // check if equal
+        while (right != null) {
+            if (left.data != right.data) {
                 return false;
             }
             left = left.next;
@@ -217,11 +220,11 @@ public class LL {
 
     public boolean isCycle() {
         Node slow = head;
-        Node fast = head; 
-        while(fast!=null && fast.next!=null) {
+        Node fast = head;
+        while (fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
-            if(fast == slow) {
+            if (fast == slow) {
                 return true;
             }
         }
@@ -232,41 +235,40 @@ public class LL {
         Node slow = head;
         Node fast = head;
         int flag = 0;
-        while(fast!=null && fast.next!=null) {
+        while (fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
-             if(fast == slow) {
+            if (fast == slow) {
                 flag = 1;
-                 break;
+                break;
             }
         }
-        
-        if(flag == 0)
+
+        if (flag == 0)
             return null;
         slow = head;
         int i = 0;
-        while(slow != fast) {
+        while (slow != fast) {
             slow = slow.next;
             fast = fast.next;
             i++;
         }
-        
+
         return slow;
     }
-    
+
     private Node mergeSortHelper(Node head) {
-        if(head == null || head.next == null) {
+        if (head == null || head.next == null) {
             return head;
         }
 
-        
         Node mid = findMidNode(head);
-        //System.out.println(mid.data);
+        // System.out.println(mid.data);
         Node head2 = mid.next;
         mid.next = null;
         Node newHead1 = mergeSortHelper(head);
         Node newHead2 = mergeSortHelper(head2);
-       // System.out.println(newHead1.data+" "+newHead2.data);
+        // System.out.println(newHead1.data+" "+newHead2.data);
         Node finalHead = merge(newHead1, newHead2);
 
         return finalHead;
@@ -276,8 +278,8 @@ public class LL {
         Node finalHead = new Node(-1);
         Node temp = finalHead;
 
-        while(head1 != null && head2 != null) {
-            if(head1.data <= head2.data) {
+        while (head1 != null && head2 != null) {
+            if (head1.data <= head2.data) {
                 temp.next = head1;
                 head1 = head1.next;
             } else {
@@ -287,13 +289,13 @@ public class LL {
             temp = temp.next;
         }
 
-        while(head1 != null) {
+        while (head1 != null) {
             temp.next = head1;
             head1 = head1.next;
             temp = temp.next;
         }
 
-        while(head2 != null) {
+        while (head2 != null) {
             temp.next = head2;
             head2 = head2.next;
             temp = temp.next;
@@ -305,39 +307,40 @@ public class LL {
     public void mergeSort() {
         head = mergeSortHelper(head);
     }
+
     public static void main(String args[]) {
         LL ll = new LL();
 
-        //Add Nodes
+        // Add Nodes
         ll.addLast(5);
         ll.addLast(4);
         ll.addLast(3);
         ll.addLast(2);
-        //ll.addLast(1);
+        // ll.addLast(1);
         ll.print();
-        //System.out.println(ll.size);
+        // System.out.println(ll.size);
         ll.mergeSort();
         ll.print();
         /*
-        // Delete Nodes
-        ll.removeFirst();
-        ll.removeLast();
-        ll.removeFirst();
-        ll.removeLast();
-        ll.print();
-        System.out.println(ll.size);
-
-        // Iterative Search
-        System.out.println(ll.itSearch(1));    
-        System.out.println(ll.itSearch(5));    
-
-        // Recursive Search
-        System.out.println(ll.recSearch(1));    
-        System.out.println(ll.recSearch(5));   
-        
-        //Reverse LL
-        ll.reverse();
-        ll.print();
-        */
+         * // Delete Nodes
+         * ll.removeFirst();
+         * ll.removeLast();
+         * ll.removeFirst();
+         * ll.removeLast();
+         * ll.print();
+         * System.out.println(ll.size);
+         * 
+         * // Iterative Search
+         * System.out.println(ll.itSearch(1));
+         * System.out.println(ll.itSearch(5));
+         * 
+         * // Recursive Search
+         * System.out.println(ll.recSearch(1));
+         * System.out.println(ll.recSearch(5));
+         * 
+         * //Reverse LL
+         * ll.reverse();
+         * ll.print();
+         */
     }
 }
