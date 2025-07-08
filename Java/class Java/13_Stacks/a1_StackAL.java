@@ -3,7 +3,9 @@ import java.util.ArrayList;
 /* very imp */
 // done
 public class a1_StackAL {
-    static class Stack {    // making the static class
+    public static class Stack {    // making the static class
+                            // actually this decides the name of the class for the below too 
+
         ArrayList<Integer> list = new ArrayList<>();
 
         public boolean isEmpty() {

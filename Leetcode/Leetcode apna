@@ -3,3 +3,8 @@ string done
 backtracking left after doing some problems 
 arraylist classwork all done 
 
+Feature	Behavior
+static variable	Shared across all instances of the class (i.e., class-level data).
+static method	Can be called without creating an object.
+static block	Runs once when the class is loaded.
+static class (nested)	Can exist without an instance of the outer class.

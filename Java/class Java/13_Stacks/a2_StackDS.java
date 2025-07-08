@@ -3,18 +3,17 @@ import java.util.*;
 // done
 //stack using Linked List
 public class a2_StackDS {//stack class 
-    static class Node {// represetn ll with node
+        public static class Node {// represetn ll with node
         int data;
         Node next;
-
-        Node(int data) {// constructor where data is passed and initialised
+        public Node(int data) {// constructor where data is passed and initialised
             this.data = data;
             this.next = null;
         }
     }
 
     static class Stack {
-         static Node head = null;//initialised 
+        public static Node head = null;//initialised 
          public static boolean isEmpty() {// to check if empty
             return head == null;
         }
