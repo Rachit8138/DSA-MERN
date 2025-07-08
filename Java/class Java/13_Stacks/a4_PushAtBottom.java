@@ -1,5 +1,5 @@
 import java.util.*;
-
+/* QN 1 VERY IMP */
 public class a4_PushAtBottom {
     public static void pushAtBottom(Stack<Integer>s, int data){
         if(s.isEmpty()){
@@ -17,9 +17,9 @@ public class a4_PushAtBottom {
         s.push(3);
 
         /* 1. Push at the bottom of the stack  */
-        // pushAtBottom(s,4);
-        // while(!s.isEmpty()){
-        //     System.out.println(s.pop());
-        // }
+        pushAtBottom(s,4);
+        while(!s.isEmpty()){
+            System.out.println(s.pop());
+        }
     }
 }

@@ -20,7 +20,6 @@ public class a2_StackDS {//stack class
         // push
          static void push(int data) {
             Node newNode = new Node(data);
-
             if(head == null) {
                 head = newNode;
                 return;

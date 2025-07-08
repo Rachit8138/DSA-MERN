@@ -18,7 +18,7 @@ public class a1_StackAL {
 
         public int pop() {
             if(isEmpty()) {
-                return -1;
+                return -1;  
             }
             int top = list.remove(list.size()-1);
             return top;
