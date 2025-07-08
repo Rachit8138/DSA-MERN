@@ -142,24 +142,65 @@ public class Linked {
         ll.addlast(6);
         
         ll.print();
+        ll.addlast(1);
         ll.addlast(2);
-        ll.addlast(3);
         ll.print(); 
-        ll.addlast(3);
-        System.out.println(checkpalindrome());
-
+        ll.remocycle();
+        tail.next = new Linked(3);
 
     }
+
+   
+public void remocycle() {
+    if (head == null || head.next == null) return;
+
+    // Step 1: Detect cycle
+    Node slow = head;
+    Node fast = head;
+    boolean c = false;
+
+    while (fast != null && fast.next != null) {
+        slow = slow.next;
+        fast = fast.next.next;
+        if (slow == fast) {
+            c = true;
+            break;
+        }
+    }
+
+    // 🛑 Return if no cycle is found
+    if (!c) {
+        System.out.println("no cycle");
+        return;
+    }
+
+    // Step 2: Find the start of the loop
+    Node prev = null;
+    slow = head;
+    while (slow != fast) {
+        prev = fast;
+        slow = slow.next;
+        fast = fast.next;
+    }
+
+    // Step 3: Remove cycle
+    prev.next = null;
+}
+
     // finding the mid 
     public static Node findmid(){
-        Node slow= head;
+        Node slow = head; 
         Node fast = head; 
-        while(fast !=null && fast.next!= null){
-            slow = slow.next; 
-            fast = fast.next.next;
+        while(fast!= null && fast.next !=null){
+            slow=slow.next; 
+            fast = fast.next; 
         }
-        return slow; 
+        return slow;
     }
+    
+
+
+
 
     public static boolean checkpalindrome(){
         // edge case 

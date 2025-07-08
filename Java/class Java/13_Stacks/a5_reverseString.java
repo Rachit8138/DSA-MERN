@@ -3,7 +3,6 @@ public class a5_reverseString {
     public static String reverseString(String str){
         Stack<Character> s = new Stack<>();
         int idx =0;
-        while(idx < str.length()){
             s.push(str.charAt(idx));
             idx++;
         }
@@ -18,4 +17,5 @@ public class a5_reverseString {
         String str="abc";
         String result = reverseString(str);
         System.out.println(result); 
+}
 }
