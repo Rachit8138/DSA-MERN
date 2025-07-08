@@ -1,4 +1,4 @@
-import java.util.LinkedList;
+// import java.util.LinkedList;
 
 public class DoubleLL {
     public class Node{
@@ -19,7 +19,7 @@ public class DoubleLL {
         Node newNode = new Node(data);
         if(head == null){
             head=tail=newNode;
-            return;
+            return; 
         }
         newNode.next=head;
         head.prev=newNode;
@@ -73,7 +73,19 @@ public class DoubleLL {
         }
     }
 
-    public void reverse(){
+ 
+    /* public void removeLast(){
+        if(head == null) {
+            System.out.println("empty already ");
+            return;
+        }else if(head.next == null){
+            head = tail = null;
+            return;
+        }
+        tail = tail.prev;
+        tail.next = null;
+    } */
+ public void reverse(){
         Node prev = null;
         Node current = head;
         Node next;
@@ -97,11 +109,11 @@ public class DoubleLL {
         dll.addFirst(5);
         dll.print();
 
-        dll.removeFirst();
-        dll.print();
+        // dll.removeFirst();
+        // dll.print();
         
-        dll.addLast(0);
-        dll.print();
+        // dll.addLast(0);
+        // dll.print();
 
         dll.removeLast();
         dll.print();
