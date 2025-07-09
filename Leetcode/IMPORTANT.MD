@@ -1,3 +1,25 @@
+# Archit Aggarwal
+
+coding round is asked in hackerrank/hacker-run
+![alt text](image.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)
+service based companies- debuging based program, mathematics, relational algebra/maths. 
+
+mcq mostly asked in os, dbms, oops, computer networking 
+
+Technical round -1
+1. Introduce yourself: 2 min, 
+2. 2 pointer technique 
+splitwise: dsa was used in this, why you use this concept
+
+3. abstract classes, interfaces, runtime polymorphism
+4. what is your favorite subject: say technical subjects. eg oops, oops related qn is asked. multiple inheritance implement it: 
+5. 
+
 # REVISE 
 willianfist How to start leetcode:
 
