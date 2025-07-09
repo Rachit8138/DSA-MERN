@@ -43,7 +43,7 @@ public class a10_duplicate_parentheses {
      */
 
     public static void main(String args[]){
-        String str = "((a+b))"; //true duplicate parentheses present
+        // String str = "((a+b))"; //true duplicate parentheses present
         String str2 = "((a)-(b))"; //false no duplicate
         
         System.out.println(check(str2));

@@ -1,4 +1,4 @@
-import java.util.*;
+// import java.util.*;
 /* very imp */
 // done
 //stack using Linked List
@@ -14,11 +14,11 @@ public class a2_StackDS {//stack class
 
     static class Stack {
         public static Node head = null;//initialised 
-         public static boolean isEmpty() {// to check if empty
+         public  boolean isEmpty() {// to check if empty
             return head == null;
         }
         // push
-         static void push(int data) {
+         public void push(int data) {
             Node newNode = new Node(data);
             if(head == null) {
                 head = newNode;
@@ -28,7 +28,7 @@ public class a2_StackDS {//stack class
             head = newNode;
         }
         //pop
-        public static int pop() {
+        public  int pop() {
             if(isEmpty()) {
                 return -1;
             }
@@ -37,7 +37,7 @@ public class a2_StackDS {//stack class
             return top.data;
         }
         //peek
-        public static int peek() {
+        public  int peek() {
             if(isEmpty()) {
                 return -1;
             }
