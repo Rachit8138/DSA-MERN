@@ -1,32 +1,71 @@
 package Practice;
 
-import java.util.*;
+import java.util.Stack;
 
 public class a1 {
-    public static void main(String[] args) {
-        ArrayList<Integer> list=new ArrayList<>();
-        list.add(1);
-        list.add(5);
-        list.add(6);
-        list.add(4);
-
-        // System.out.println(list.set(2,2));;
-
-        maxi(list);
-        System.out.println(list);
-    }
-
-    public static void maxi(ArrayList<Integer> list){
-        int max=list.get(0);
-        /* for(int i =0; i<list.size();i++){
-            max=Math.max(max, list.get(i));
-        } */
-
-
-        for (int a : list){
-            max=Math.max(max, a);
+    public static class Node{
+        int data; 
+        Node next ;
+        public Node(int data){
+            this.data= data; 
+            this.next = null;
         }
-        System.out.println(max);
     }
-    
+
+    public static Node head; 
+
+
+    public static class tack{
+
+        public  void push(int data){
+            // 1. create a new node; 
+            Node newNode = new Node(data);
+            if(head == null){
+                head = newNode;
+                return;
+            }
+            newNode.next = head; 
+            head = newNode;
+        }
+
+
+        public void print(){
+            Node temp = head; 
+            while(temp!= null){
+                System.out.print(temp.data+"->");
+                temp= temp.next;  
+            }
+            System.out.println("null");
+        }
+        
+        public boolean isEmpty(){
+            return head == null;
+
+        }
+
+        public int pop(){
+            if(isEmpty()){
+                System.out.println("empty");
+                return -1;
+            }
+            int top = head.data;
+            head =head.next; 
+            return top;
+        }
+        public int peek(){
+            
+        }
+
+    }
+    public static void main(String[] args) {
+        tack s = new tack();
+        s.push(3);
+        s.push(5);
+        s.push(56);
+        s.print();
+        while(!s.isEmpty()){
+            System.out.println();
+        }
+        
+    }
 }
