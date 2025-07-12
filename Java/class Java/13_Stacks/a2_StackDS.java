@@ -12,7 +12,7 @@ public class a2_StackDS {//stack class
         }
     }
 
-    static class Stack {
+        public static class Stack {
         public static Node head = null;//initialised 
          public  boolean isEmpty() {// to check if empty
             return head == null;

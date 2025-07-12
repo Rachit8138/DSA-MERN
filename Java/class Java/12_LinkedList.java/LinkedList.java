@@ -335,7 +335,6 @@ public class LinkedList {
         mid.next = null;
         Node newLeft = mergeSort(head);
         Node newRight = mergeSort(rightHead);
-
         //merge
         return merge(newLeft, newRight);
     }

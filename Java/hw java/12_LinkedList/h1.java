@@ -45,7 +45,6 @@ class h1 {
         // Creating two linked lists with intersection
         Node head1 = new Node(10); // First list: 10 -> 15 -> 30
         Node head2 = new Node(3); // Second list: 3 -> 6 -> 9 -> 15 -> 30
-
         Node newNode = new Node(6);
         head2.next = newNode;
         newNode = new Node(9);

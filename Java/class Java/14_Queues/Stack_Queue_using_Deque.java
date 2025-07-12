@@ -1,7 +1,7 @@
 import java.util.*;
 
-public class Classroom {
-    static class Stack {
+public class Stack_Queue_using_Deque {
+    static class Stack {// static class to be used in main class 
         Deque<Integer> deque = new LinkedList<>();
 
         public void push(int data) {
