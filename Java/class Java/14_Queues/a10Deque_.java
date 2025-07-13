@@ -1,5 +1,5 @@
 import java.util.*;
-public class Deque_ {
+public class a10Deque_ {
     
   
     public static void main(String args[]){

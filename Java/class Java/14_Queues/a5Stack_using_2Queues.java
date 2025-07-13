@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class a5Stack_using_Queues {
+public class a5Stack_using_2Queues {
 
     static class Stack {
         static Queue<Integer> q1 = new LinkedList<>();

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Stack_Queue_using_Deque {
+public class a11Stack_Queue_using_Deque {
     static class Stack {// static class to be used in main class 
         Deque<Integer> deque = new LinkedList<>();
 

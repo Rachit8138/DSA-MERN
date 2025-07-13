@@ -1,5 +1,5 @@
 import java.util.*;
-public class interLeave_elements {
+public class a8interLeave_elements {
 
     public static void inter_leave(Queue<Integer> q){
         //first we will make another queue of first half elements

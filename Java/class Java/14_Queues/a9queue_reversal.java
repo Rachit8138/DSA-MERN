@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class queue_reversal {
+public class a9queue_reversal {
 
     public static void reverse(Queue<Integer> q){
 
