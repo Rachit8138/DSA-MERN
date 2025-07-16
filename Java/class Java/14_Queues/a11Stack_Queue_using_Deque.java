@@ -1,11 +1,11 @@
 import java.util.*;
-
+/* not important for creating stacks and queue */
 public class a11Stack_Queue_using_Deque {
     static class Stack {// static class to be used in main class 
         Deque<Integer> deque = new LinkedList<>();
 
         public void push(int data) {
-            deque.addLast(data);
+            deque.addFirst(data);
         }
 
         public int pop() {

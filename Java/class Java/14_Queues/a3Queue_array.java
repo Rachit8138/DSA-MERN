@@ -1,5 +1,5 @@
 public class a3Queue_array {
-
+/* asked */
     static class Queue {// static class so it could be used in teh main class
         static int arr[];
         static int size;
@@ -13,7 +13,7 @@ public class a3Queue_array {
 
         }
 
-        // isEmpty function
+        // isEmpty function7
         public static boolean isEmpty() {
             return rear == -1;
         }
@@ -52,7 +52,6 @@ public class a3Queue_array {
                 System.out.println("Queue is Empty");
                 return -1;
             }
-
             return arr[0];
         }
 

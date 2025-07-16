@@ -3,44 +3,41 @@
   /* very very imp asked in microsoft */
 public class a2Queue_LL {
 
-    static class Node{
+    public static class Node{
         int data;
         Node next;
         
         //construsctor 
-        Node(int data){
+        public Node(int data){
             this.data = data;
             this.next = null;
         }
     }
 
-    static class Queue{
-
-        static Node head = null;
-        static Node tail = null;
+    public static class Queue{
+        private static Node head;
+        private static Node tail;
 
         //cheaking is the queue is empty or not
         public static boolean isEmpty(){
-            return tail == null && head == null;
+            return head == null;
         }
 
         //add
-        public static void add(int data){
+        public  void add(int data){
             Node newNode = new  Node(data);
 
                 //if the list is empty
             if(isEmpty()){
-                head = tail = null;
+                head = tail = newNode;
                 return;
             }
-
             tail.next = newNode;
             tail = newNode;
-
         }
 
         //remove
-        public static int remove(){
+        public  int remove(){
             
             //if empty
             if(isEmpty()){
@@ -59,7 +56,7 @@ public class a2Queue_LL {
         }
 
         //peek
-        public static int peek(){
+        public  int peek(){
             //if queue empty
             if(isEmpty()){
                 System.out.print("Queue is empty");
@@ -70,17 +67,14 @@ public class a2Queue_LL {
         }
 
         public static void main(String args[]){
-
             Queue q = new  Queue();
 
             q.add(1);
             q.add(2);
             q.add(3);
-
+            System.out.println(q.peek());
             while(!isEmpty()){
-                System.out.println(q.peek());
-                q.remove();
-
+                System.out.println(q.remove());
             }
         }
 
