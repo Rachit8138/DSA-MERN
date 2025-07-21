@@ -13,20 +13,16 @@ public class a6Queue_using_two_stack {
 
         //add  - O(n)
         public static void add(int data){
-        
-
             //transfering elements from s1 to s2
             while(!s1.isEmpty()){
-                int temp = s1.pop();
-                s2.push(temp);
+                s2.push(s1.pop());
             }
             //adding new element 
             s1.push(data);
 
             //transfering the elements back
             while(!s2.isEmpty()){
-                int temp = s2.pop();
-                s1.push(temp);
+                s1.push(s2.pop());
             }
 
 

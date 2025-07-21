@@ -1,6 +1,6 @@
 public class a3Queue_array {
 /* asked */
-    static class Queue {// static class so it could be used in teh main class
+    static class Queue {// static class so it could be used in the main class
         static int arr[];
         static int size;
         static int rear;

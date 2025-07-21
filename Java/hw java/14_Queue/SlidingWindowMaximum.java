@@ -6,7 +6,7 @@ public class SlidingWindowMaximum {
     static void printSlidingWindowMaximumDeque(int arr[], int N, int K) {
         Deque<Integer> queue = new LinkedList<>();
 
-        // Process first K (or first window) elements of array
+        // (or first window) 
         for (int i = 0; i < K; ++i) {
             // For every element, the previous smaller elements are useless so
             // remove them from Qi
@@ -21,7 +21,7 @@ public class SlidingWindowMaximum {
         // Print first window maximum
         System.out.print(arr[queue.peek()] + " ");
 
-        // Process rest of the elements, i.e., from arr[K] to arr[n-1]
+        //  rest of the elements, i.e., from arr[K] to arr[n-1]
         for (int i = K; i < N; ++i) {
             // Remove the elements which are out of this window
             while ((!queue.isEmpty()) && queue.peek() <= i - K)

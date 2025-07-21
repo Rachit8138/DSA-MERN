@@ -2,26 +2,42 @@ package Practice;
 
 import java.util.Stack;
 
-
 public class a3 {
-    public static String reverse(String s){
-        // 1. store all the string in stack
-        Stack <Character> stack = new Stack<>();
-        for (int i =0; i<s.length();i++){
-            stack.push(s.charAt(i));
+    static class Queue{
+        static Stack<Integer> s1= new Stack<>();
+        static Stack<Integer> s2= new Stack<>();
+
+        public static boolean isEmpty(){
+            return s1.isEmpty();
         }
-        
-        // 2. store everything in stringbuilder 
-        StringBuilder result = new StringBuilder();
-        while(!stack.isEmpty()){
-            result.append(stack.pop());
+
+        public static void add(int data){
+            while(!s1.isEmpty()){
+                s2.push(s1.pop());
+
+            }
+            // if empty then push 
+            s1.push(data);
+            // transferring elements back 
+            while(!s2.isEmpty()){
+                s1.push(s2.pop());
+            }
         }
-        // 3. return string
-        return result.toString();
+
+
 
     }
-    public static void main(String[] args) {
-        System.out.println(reverse("rachit"));
+
+    public static void main(String[] args){
+        Queue q= new Queue();
+        q.add(1);
+        q.add(3);
+        q.add(4); 
+        System.out.println(q.peek());
+        while(!q.isEmpty()){
+            System.out.println(q.remove());
+        }
+
     }
     
 }

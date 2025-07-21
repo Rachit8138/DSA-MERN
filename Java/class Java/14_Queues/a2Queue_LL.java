@@ -1,6 +1,6 @@
   import java.util.*;
 
-  /* very very imp asked in microsoft */
+  /*  important*/
 public class a2Queue_LL {
 
     public static class Node{
