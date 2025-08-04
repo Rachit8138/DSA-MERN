@@ -2,6 +2,11 @@ import java.util.*;
 
 public class a5Stack_using_2Queues {
 
+    /* 
+     
+    if interviews asks then only use the 2 queues else don't use it because the time complexity for this is O(N)
+     */
+
     static class Stack {
         static Queue<Integer> q1 = new LinkedList<>();
         static Queue<Integer> q2 = new LinkedList<>();

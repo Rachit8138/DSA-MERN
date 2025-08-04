@@ -1,4 +1,4 @@
-import java.util.*;
+ import java.util.*;
 public class a8interLeave_elements {
 
     public static void inter_leave(Queue<Integer> q){

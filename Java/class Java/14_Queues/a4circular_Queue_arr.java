@@ -37,12 +37,9 @@ public class a4circular_Queue_arr {
                 System.out.println("Queue is full");
                 return;
             }
-            if(front==-1){
-                front=0;
-            }
+            if(front==-1) front=0;
             rear=(rear+1)% size; 
             arr[rear]=data;
-
         }
 
         // remove function
@@ -51,10 +48,7 @@ public class a4circular_Queue_arr {
                 System.out.println("Queue is Empty");
                 return -1;
             }
-
             int result = arr[front];
-            
-
             //if we are removing the last element
             if(rear == front){
                 rear = front = -1;
@@ -70,12 +64,11 @@ public class a4circular_Queue_arr {
                 System.out.println("Queue is Empty");
                 return -1;
             }
-
             return arr[front];
         }
 
         public static void main(String args[]) {
-            Queue q = new Queue(5);
+            Queue q = new Queue(3);
 
             q.add(1);
             q.add(2);

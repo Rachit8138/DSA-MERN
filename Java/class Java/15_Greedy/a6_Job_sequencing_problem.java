@@ -15,7 +15,7 @@ public class a6_Job_sequencing_problem {
         }
     }
     public static void main(String args[]){
-        int jobsInfo[][] = {{4,20},{1,10},{1,40},{1,30}};
+        int jobsInfo[][] = {{4,20},{1,10},{1,40},{1,30},{2, 50}};
 
         //so here we will make a arrayList of object jobs
         //for that make a job class
@@ -25,6 +25,7 @@ public class a6_Job_sequencing_problem {
         for(int i = 0; i<jobsInfo.length; i++){
             //adding each job in the arrayList as an object
             jobs.add(new Job(i,jobsInfo[i][0],jobsInfo[i][1]));
+            // You are creating an object of type Job with those 3 values.
         }
 
         //sorting the jobs on the basis of their profit
@@ -38,11 +39,15 @@ public class a6_Job_sequencing_problem {
         int time = 0;
 
         for(int  i =0; i<jobs.size(); i++){
-            Job curr = jobs.get(i);
+            Job curr = jobs.get(i);//This gets the i-th Job object from the jobs ArrayList.
             if(curr.deadline > time){
                 seq.add(curr.id);
                 time++;
             }
+            /* 
+            curr.deadline: Accesses the deadline of the current Job object (via its class field).
+            curr.id:Accesses the job’s ID.
+             */
         }   
 
         //max jobs

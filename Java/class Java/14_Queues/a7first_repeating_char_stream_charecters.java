@@ -18,21 +18,18 @@ public class a7first_repeating_char_stream_charecters {
              * if charecter is a the a-a = 0 so index at a will increase
              * and for example ch = c the c-a = 99-97 = 2 so the index 2 will increase
              */
-
+ 
             freq[ch - 'a']++;
-
+            // remove until you find 1st non repearting letter   
             while (!q.isEmpty() && freq[q.peek() - 'a'] > 1) {
                 q.remove();
-
             }
             if (q.isEmpty()) {
                 System.out.print("-1 ");
             } else {
                 System.out.print(q.peek() + " ");
             }
-
         }
-
     }
 
     public static void main(String args[]) {

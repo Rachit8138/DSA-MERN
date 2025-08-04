@@ -2,7 +2,6 @@ import java.util.*;
 public class a1_Order_treverse {
 
     static class Node {
-
         int data;
         Node left;
         Node right;
@@ -75,21 +74,16 @@ public class a1_Order_treverse {
 
         //#4 Level Order
         public static void levelOrder(Node root){ // to print elements level wise
-
             //base case
             if(root == null){
                 return;
             }
-
             //we will use a queue to store the elments 
             Queue <Node> q = new LinkedList<>();
-
             //initial steps
             q.add(root);
             q.add(null);
-
             while(!q.isEmpty()){
-                
                 Node currNode = q.remove();
                 if(currNode == null){
                     System.out.println();
@@ -107,19 +101,20 @@ public class a1_Order_treverse {
                         q.add(currNode.right);
                     }
                 }
-
-
-
-
-            }
-
-
-
-        }
+            }        
+        }    
     }
 
     public static void main(String args[]) {
 
+        /* 
+        1
+       / \
+      2   3
+     / \   \
+    4   5   6
+
+         */
         int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
 
         BinaryTree tree = new BinaryTree();

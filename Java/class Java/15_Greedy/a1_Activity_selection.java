@@ -25,10 +25,9 @@ public class a1_Activity_selection {
         Arrays.sort(activities, Comparator.comparingDouble(o -> o[2])); //here 2 is showing coloum no. three
         //end time basis soted
 
-        int maxAct = 0;
         ArrayList <Integer> ans = new ArrayList<>();
         //1ast activity
-        maxAct = 1;//because at list one activity will be performed
+        int maxAct = 1;//because at list one activity will be performed
         ans.add(activities[0][0]);
         int lastEnd = activities[0][2];
         for(int i = 0; i<end.length; i++){
@@ -38,7 +37,6 @@ public class a1_Activity_selection {
                 lastEnd = activities[i][2];
             }
         }
-        
         System.out.println("Max actvity = "+maxAct);
         for(int i = 0; i< ans.size(); i++){
             System.out.print("A"+ans.get(i)+" ");

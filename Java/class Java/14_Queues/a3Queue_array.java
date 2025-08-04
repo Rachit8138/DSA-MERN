@@ -10,7 +10,6 @@ public class a3Queue_array {
             arr = new int[n];
             size = n;
             rear = -1;
-
         }
 
         // isEmpty function7
@@ -29,6 +28,14 @@ public class a3Queue_array {
             // adding the element
             rear = rear + 1;
             arr[rear] = data;
+            /* 
+             * | Code       | Increment Before / After      | First element inserted at           | Expected `rear` start |
+| ---------- | ----------------------------- | ----------------------------------- | --------------------- |
+| **Code 1** | `rear = rear + 1;` (Before)   | `arr[0]` (if `rear = -1` initially) | `rear = -1`           |
+| **Code 2** | `arr[rear++] = data;` (After) | `arr[0]` (if `rear = 0` initially)  | `rear = 0`            |
+
+             */
+            
         }
 
         // remove function
@@ -56,11 +63,15 @@ public class a3Queue_array {
         }
 
         public static void main(String args[]) {
-            Queue q = new Queue(5);
+            Queue q = new Queue(3);
 
             q.add(1);
             q.add(2);
             q.add(3);
+            System.out.println(q.remove());
+            q.add(4);
+            System.out.println(q.remove());
+            q.add(5);
 
             while (!q.isEmpty()) {
                 System.out.println(q.peek());

@@ -2,9 +2,9 @@ import java.util.*;
 public class a2_knapsack {
 
     public static void main(String args[]){
-        int val[] = {60,100,120};
-        int weight[] = {10,20,30};
-        int W = 50; //bag weight
+        int val[] = {60,120, 80, 75};
+        int weight[] = {10,30, 40, 25};
+        int W = 90; //bag weight
 
         //2D array for storing the rate
         double rate[][] = new double[val.length][2];
@@ -13,7 +13,7 @@ public class a2_knapsack {
             rate[i][0] = i; //storing index on coloum 1st
             //type casting below is so important or the value can became 0
             rate[i][1] = val[i]/(double)weight[i]; //storing rate on coloum 2nd
-            
+            // normally double is preferred for  precision-sensitive calculations./ accuray is higher 
         }
 
         //sorting on the basis of coloum 2
@@ -28,9 +28,8 @@ public class a2_knapsack {
 
             if(capacity >= weight[idx]){ // include all
                 finalVal += val[idx];
-                capacity -= weight[idx];
+                capacity -= weight[idx];    
             }else{//we will add fraction part
-
                 finalVal += (rate[i][1]*capacity); //here it will add only about that much it can hold remaining capacity
                 capacity = 0;
                 break;
