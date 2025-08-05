@@ -22,7 +22,6 @@ public class a6_reverse_stack {
         reverse(s);
         pushAtBottom(s, top);
     }
-
     
     public static void printStack( Stack<Integer> s ){
         while(!s.isEmpty()) {

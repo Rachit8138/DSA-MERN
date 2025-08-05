@@ -29,8 +29,7 @@ public class a1_Order_treverse {
 
             Node newNode = new Node(nodes[idx]);
             newNode.left = buildTree(nodes);
-            newNode.right = buildTree(nodes);
-
+            newNode.right = buildTree(nodes); 
             return newNode;
         }
 

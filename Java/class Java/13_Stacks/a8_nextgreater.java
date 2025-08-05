@@ -1,5 +1,6 @@
   import java.util.*;
 // next generator
+/* very imp */
 
 public class a8_nextgreater {
     public static void print(int arr[]) {
