@@ -14,6 +14,7 @@ public class a9_isValid {
                 if(s.isEmpty()) {// '))}'
                     return false;
                 }
+                // now we will check for pairs
                 if( (s.peek() == '(' && ch == ')') //() 
                     || (s.peek() == '{' && ch == '}') //{}
                     || (s.peek() == '[' && ch == ']') ) { //[]
@@ -95,5 +96,7 @@ public class a9_isValid {
     public static void main(String args[]) { 
         int arr[] = {2, 4}; //heights in histogram
         maxArea(arr);
+
+        // isValid(({}[]()));
     }
 }
