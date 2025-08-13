@@ -13,7 +13,6 @@ public class a2_diameter {
             this.left = null;
             this.right = null;
         }
-
     }
 
     //function to calculate height

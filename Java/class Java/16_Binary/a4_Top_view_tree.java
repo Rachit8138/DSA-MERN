@@ -93,10 +93,10 @@ public class a4_Top_view_tree {
         root.right.right = new Node(7);
 
         /*
-         * 1
-         * / \
-         * / \
-         * 2 3
+         *   1
+         *  / \
+         * /   \
+         * 2    3
          * / \ / \
          * 4 5 6 7
          * 

@@ -15,7 +15,6 @@ public class a1_Order_treverse {
     }
 
     static class BinaryTree {
-
         static int idx = -1;
         /*we will treverse the whole tree index wise and at first only 
         we will increase the index so basical we will start with zero*/
@@ -53,7 +52,6 @@ public class a1_Order_treverse {
             if(root == null){
                 return;
             }
-
             inOrder(root.left);
             System.out.print(root.data+" ");
             inOrder(root.right);
@@ -65,7 +63,6 @@ public class a1_Order_treverse {
             if(root == null){
                 return;
             }
-
             postOrder(root.left);
             postOrder(root.right);
             System.out.print(root.data+" ");
