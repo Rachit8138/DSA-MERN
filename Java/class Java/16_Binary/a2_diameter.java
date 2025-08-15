@@ -27,6 +27,7 @@ public class a2_diameter {
         int rightHeight = height(root.right);
 
         return Math.max(leftHeight,rightHeight)+1;
+        // return Math.max(height(root.left),height(root.right))+1;
     }
 
     //function to calculate NUMBER OF NODES
@@ -62,6 +63,7 @@ public class a2_diameter {
 
         return sum;
     }
+
 
     //function to calculate diameter of tree // O(n^2)
     public static int diameter(Node root){
@@ -121,21 +123,21 @@ public class a2_diameter {
         root.right.right = new Node(7);
         
 
-        /*
-                 1
-                / \
-               /   \
-              3     2
-             / \   / \
-            4   5 6   7
-            null null will  be on both
+        /*    1
+           /     \
+         3         2
+       /   \     /   \
+     4     5   6     7
+    / \   / \ / \   / \
+ null null null null null null null null
+
 
             // [1, 2, 4, -1, -1, 5, -1, -1, 3, 6, -1, -1, 7, -1, -1]
         // in this manner tha array will be created
 
          */
 
-        System.out.println(height(root));
+        System.out.println("hiehgt "+height(root));
 
         System.out.println("Total nodes = "+count(root));
 

@@ -45,6 +45,7 @@ public class a1_Order_treverse {
          */
 
         public static Node buildTree(int nodes[]) {// this is actually a function
+            // int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 }; this is in a preorder way 
             idx++;// will be zero
             // base case will stop at null mode
 
