@@ -104,17 +104,17 @@ public class a1_Order_treverse {
             Queue<Node> q = new LinkedList<>();
             // initial steps
             q.add(root);
-            q.add(null);
+            // q.add(null);
             while (!q.isEmpty()) {
                 Node currNode = q.remove();
-                if (currNode == null) {
-                    System.out.println();
-                    if (!q.isEmpty()) {
-                        q.add(null);
-                    } else {
-                        break;
-                    }
-                } else {
+                // if (currNode == null) {
+                //     System.out.println();
+                //     // if (!q.isEmpty()) {
+                    //     q.add(null);
+                    // } else {
+                    //     break;
+                    // }
+                // } else {
                     System.out.print(currNode.data + " ");
                     if (currNode.left != null) {
                         q.add(currNode.left);
@@ -122,7 +122,7 @@ public class a1_Order_treverse {
                     if (currNode.right != null) {
                         q.add(currNode.right);
                     }
-                }
+                // }
             }
         }
     }
@@ -139,17 +139,17 @@ public class a1_Order_treverse {
          */
         int nodes[] = { 1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1 };
 
-        BinaryTree tree = new BinaryTree();
+        BinaryTree tree = new BinaryTree();// tree makes the instance of binary tree    
         /* Creates a BinaryTree object.Calls buildTree(nodes) to create the tree. */
         Node root = tree.buildTree(nodes);
-        System.out.println();
-        tree.preOrder(root);
-        System.out.println();
-        tree.inOrder(root);
-        System.out.println();
-        tree.postOrder(root);
-        System.out.println();
-        // tree.levelOrder(root);
+        // System.out.println();
+        // tree.preOrder(root);
+        // System.out.println();
+        // tree.inOrder(root);
+        // System.out.println();
+        // tree.postOrder(root);
+        // System.out.println();
+        tree.levelOrder(root);
     }
 
 }

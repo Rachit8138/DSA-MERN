@@ -129,9 +129,7 @@ public class a2_diameter {
        /   \     /   \
      4     5   6     7
     / \   / \ / \   / \
- null null null null null null null null
-
-
+ null null null null null 
             // [1, 2, 4, -1, -1, 5, -1, -1, 3, 6, -1, -1, 7, -1, -1]
         // in this manner tha array will be created
 
