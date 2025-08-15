@@ -13,7 +13,7 @@ public class a2_diameter {
             this.left = null;
             this.right = null;
         }
-    }
+}
 
     //function to calculate height
     public static int height(Node root){
@@ -119,6 +119,7 @@ public class a2_diameter {
         root.left.right = new Node(5);
         root.right.left = new Node(6);
         root.right.right = new Node(7);
+        
 
         /*
                  1
@@ -127,6 +128,10 @@ public class a2_diameter {
               3     2
              / \   / \
             4   5 6   7
+            null null will  be on both
+
+            // [1, 2, 4, -1, -1, 5, -1, -1, 3, 6, -1, -1, 7, -1, -1]
+        // in this manner tha array will be created
 
          */
 
