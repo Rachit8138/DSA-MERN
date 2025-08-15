@@ -16,8 +16,6 @@ public class a1_Order_treverse {
 
     static class BinaryTree {
         static int idx = -1;
-        /*we will treverse the whole tree index wise and at first only 
-        we will increase the index so basical we will start with zero*/
         public static Node buildTree(int nodes[]) {
             idx++;// will be zero
             // base case will stop at null mode
