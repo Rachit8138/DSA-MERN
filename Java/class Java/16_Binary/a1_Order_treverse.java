@@ -94,36 +94,50 @@ public class a1_Order_treverse {
             System.out.print(root.data + " ");
         }
 
-        // #4 Level Order
-        public static void levelOrder(Node root) { // to print elements level wise
-            // base case
-            if (root == null) {
-                return;
-            }
-            // we will use a queue to store the elments
+        // #4 Level Order Traversal 
+        // public static void levelOrder(Node root) { // to print elements level wise
+        //     // base case
+        //     if (root == null) {
+        //         return;
+        //     }
+        //     // we will use a queue to store the elments
+        //     Queue<Node> q = new LinkedList<>();
+        //     // initial steps
+        //     q.add(root);
+        //     // q.add(null);
+        //     while (!q.isEmpty()) {
+        //         Node currNode = q.remove();
+        //         /* this section is especially for printing next line */
+        //         // if (currNode == null) {
+        //         //     System.out.println();
+        //         //     // if (!q.isEmpty()) {
+        //             //     q.add(null);
+        //             // } else {
+        //             //     break;
+        //             // }
+        //         // } else {
+        //             System.out.print(currNode.data + " ");
+        //             if (currNode.left != null) {
+        //                 q.add(currNode.left);
+        //             }
+        //             if (currNode.right != null) {
+        //                 q.add(currNode.right);
+        //             }
+        //         // }
+        //     }
+        // }
+
+        public static void levelOrder(Node root){
             Queue<Node> q = new LinkedList<>();
-            // initial steps
+            if(root == null) return;    // edge case 
             q.add(root);
-            // q.add(null);
-            while (!q.isEmpty()) {
-                Node currNode = q.remove();
-                // if (currNode == null) {
-                //     System.out.println();
-                //     // if (!q.isEmpty()) {
-                    //     q.add(null);
-                    // } else {
-                    //     break;
-                    // }
-                // } else {
-                    System.out.print(currNode.data + " ");
-                    if (currNode.left != null) {
-                        q.add(currNode.left);
-                    }
-                    if (currNode.right != null) {
-                        q.add(currNode.right);
-                    }
-                // }
+            while(!q.isEmpty()){
+                Node curr = q.remove();
+                System.out.print(curr.data+" ");
+                if(curr.left != null) q.add(curr.left);
+                if(curr.right != null) q.add(curr.right);
             }
+
         }
     }
 
