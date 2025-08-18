@@ -16,20 +16,29 @@ public class a2_diameter {
 }
 
     //function to calculate height
-    public static int height(Node root){
+    // public static int height(Node root){
 
-        //base case 
+    //     //base case 
+    //     if(root == null){
+    //         return 0;
+    //     }
+
+    //     int leftHeight = height(root.left);
+    //     int rightHeight = height(root.right);
+
+    //     return Math.max(leftHeight,rightHeight)+1;
+    //     // return Math.max(height(root.left),height(root.right))+1;
+    // }
+
+    public static int height(Node root){
+        // base case 
         if(root == null){
             return 0;
         }
-
-        int leftHeight = height(root.left);
-        int rightHeight = height(root.right);
-
-        return Math.max(leftHeight,rightHeight)+1;
-        // return Math.max(height(root.left),height(root.right))+1;
+        int l = height(root.left);
+        int r = height(root.right);
+        return Math.max(l,r)+1;
     }
-
     //function to calculate NUMBER OF NODES
     public static int count(Node root){
 

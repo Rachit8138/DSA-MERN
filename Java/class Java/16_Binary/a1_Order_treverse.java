@@ -95,51 +95,51 @@ public class a1_Order_treverse {
         }
 
         // #4 Level Order Traversal 
-        // public static void levelOrder(Node root) { // to print elements level wise
-        //     // base case
-        //     if (root == null) {
-        //         return;
-        //     }
-        //     // we will use a queue to store the elments
-        //     Queue<Node> q = new LinkedList<>();
-        //     // initial steps
-        //     q.add(root);
-        //     // q.add(null);
-        //     while (!q.isEmpty()) {
-        //         Node currNode = q.remove();
-        //         /* this section is especially for printing next line */
-        //         // if (currNode == null) {
-        //         //     System.out.println();
-        //         //     // if (!q.isEmpty()) {
-        //             //     q.add(null);
-        //             // } else {
-        //             //     break;
-        //             // }
-        //         // } else {
-        //             System.out.print(currNode.data + " ");
-        //             if (currNode.left != null) {
-        //                 q.add(currNode.left);
-        //             }
-        //             if (currNode.right != null) {
-        //                 q.add(currNode.right);
-        //             }
-        //         // }
-        //     }
-        // }
-
-        public static void levelOrder(Node root){
-            Queue<Node> q = new LinkedList<>();
-            if(root == null) return;    // edge case 
-            q.add(root);
-            while(!q.isEmpty()){
-                Node curr = q.remove();
-                System.out.print(curr.data+" ");
-                if(curr.left != null) q.add(curr.left);
-                if(curr.right != null) q.add(curr.right);
+        public static void levelOrder(Node root) { // to print elements level wise
+            // base case
+            if (root == null) {
+                return;
             }
-
+            // we will use a queue to store the elments
+            Queue<Node> q = new LinkedList<>();
+            // initial steps
+            q.add(root);
+            // q.add(null);
+            while (!q.isEmpty()) {
+                Node currNode = q.remove();
+                /* this section is especially for printing next line */
+                if (currNode == null) {
+                    System.out.println();
+                    if (!q.isEmpty()) {
+                        q.add(null);
+                    } else {
+                        break;
+                    }
+                } else {
+                    System.out.print(currNode.data + " ");
+                    if (currNode.left != null) {
+                        q.add(currNode.left);
+                    }
+                    if (currNode.right != null) {
+                        q.add(currNode.right);
+                    }
+                }
+            }
         }
-    }
+
+        // public static void levelOrder(Node root){
+        //     Queue<Node> q = new LinkedList<>();
+        //     if(root == null) return;    // edge case 
+        //     q.add(root);
+        //     while(!q.isEmpty()){
+        //         Node curr = q.remove();
+        //         System.out.print(curr.data+" ");
+        //         if(curr.left != null)  q.add(curr.left);
+        //         if(curr.right != null) q.add(curr.right);
+        //     }
+
+        // }
+    // }
 
     public static void main(String args[]) {
 
@@ -157,13 +157,14 @@ public class a1_Order_treverse {
         /* Creates a BinaryTree object.Calls buildTree(nodes) to create the tree. */
         Node root = tree.buildTree(nodes);
         // System.out.println();
-        // tree.preOrder(root);
+        tree.preOrder(root);
         // System.out.println();
         // tree.inOrder(root);
         // System.out.println();
         // tree.postOrder(root);
-        // System.out.println();
+        System.out.println();
         tree.levelOrder(root);
     }
 
 }
+    }
