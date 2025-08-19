@@ -1,4 +1,4 @@
-public class build_BST {
+public class a1_build_BST {
 
     static class Node{
         int data;
@@ -20,12 +20,11 @@ public class build_BST {
 
         if(root.data > val){
             root.left = build(root.left,val);
-        }
-
-        if(root.data < val){
+        }else{
             root.right = build(root.right,val);
         }
 
+        System.out.println(root.data);
         return root;
     }
 
@@ -68,13 +67,13 @@ public class build_BST {
             root = build(root,values[i]);
         }
 
-        //inorder(root);
+        inorder(root);
 
-        if(search(root,7)){
-            System.out.println("True");
-        }else{
-            System.out.println("False");
-        }
+        // if(search(root,7)){
+        //     System.out.println("True");
+        // }else{
+        //     System.out.println("False");
+        // }
 
 
     }

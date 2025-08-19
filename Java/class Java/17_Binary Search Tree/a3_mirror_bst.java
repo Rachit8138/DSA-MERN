@@ -1,4 +1,4 @@
-public class mirror_bst {
+public class a3_mirror_bst {
     static class Node {
         int data;
         Node left;

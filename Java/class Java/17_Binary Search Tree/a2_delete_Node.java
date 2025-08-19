@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class delete_Node {
+public class a2_delete_Node {
 
     static class Node {
         int data;
@@ -65,7 +65,7 @@ public class delete_Node {
             root.right = delete(root.right, val);
         } else if (root.data > val) {
             root.left = delete(root.left, val);
-        } else {
+        } else {// case where you get your node
 
             // case 1 - leaf node
             if (root.left == null && root.right == null) {
@@ -79,11 +79,11 @@ public class delete_Node {
                 return root.left;
             }
 
-            // case 3 - have both children
+            // case 3 -  both children
             /* so we will return the in order succesor */
             Node is = findInOrderSuccessor(root.right);
             /*
-             * we will find it form right subtree because
+             * we will find it from left most node in right subtree because
              * In order successor is present in right subtree only
              */
 

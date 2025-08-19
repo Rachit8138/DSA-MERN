@@ -1,4 +1,4 @@
-public class Sorted_array_to_BST {
+public class a4_Sorted_array_to_BST {
     
     static class Node{
         int data;
