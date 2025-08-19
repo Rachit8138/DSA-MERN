@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Balancing_Bst {
+public class a5_Balancing_Bst {
 
     static class Node {
         int data;

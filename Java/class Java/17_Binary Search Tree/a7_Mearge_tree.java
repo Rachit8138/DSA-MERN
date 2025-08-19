@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Mearge_tree {
+public class a7_Mearge_tree {
 
     static class Node {
         int data;

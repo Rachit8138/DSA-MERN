@@ -1,4 +1,4 @@
-public class largest_valid_bst
+public class a6_largest_valid_bst
 {
  
     static class Node{
