@@ -1,12 +1,9 @@
 import java.util.*;
-
 public class a2_delete_Node {
-
     static class Node {
         int data;
         Node left;
         Node right;
-
         // constructor
         public Node(int data) {
             this.data = data;
@@ -115,7 +112,6 @@ public class a2_delete_Node {
         }
 
         if (root.data >= k1 && root.data <= k2) {
-
             printInRange(root.left, k1, k2);
             System.out.print(root.data + " ");
             printInRange(root.right, k1, k2);
