@@ -56,54 +56,85 @@ public class a2_delete_Node {
         return root;
     }
 
-    public static Node delete(Node root, int val) {
+    // public static Node delete(Node root, int val) {
 
-        if (root.data < val) { // so going right side
-            root.right = delete(root.right, val);
-        } else if (root.data > val) {
-            root.left = delete(root.left, val);
-        } else {// case where you get your node
+    //     if (root.data < val) { // so going right side
+    //         root.right = delete(root.right, val);
+    //     } else if (root.data > val) {
+    //         root.left = delete(root.left, val);
+    //     } else {// case where you get your node
 
-            // case 1 - leaf node
-            if (root.left == null && root.right == null) {
+    //         // case 1 - leaf node
+    //         if (root.left == null && root.right == null) {
+    //             return null;
+    //         }
+
+    //         // case 2 - single child
+    //         if (root.left == null) {
+    //             return root.right;
+    //         } else if (root.right == null) {
+    //             return root.left;
+    //         }
+
+    //         // case 3 -  both children
+    //         /* so we will return the inorder succesor */
+    //         Node is = findInOrderSuccessor(root.right);
+    //         /*
+    //          * we will find it from left most node in right subtree because
+    //          * In order successor is present in right subtree only
+    //          */
+    //         // replace root.data with InorderSuccesor
+    //         root.data = is.data;
+    //         // delete that node of inorder succesor
+    //         root.right = delete(root.right, is.data); // this funcitons deletes the requried node and return the
+    //                                                   // remaining branch
+    //     }
+
+    //     return root;
+
+    // }
+
+
+    // public static Node findInOrderSuccessor(Node root) {
+    //     while (root.left != null) {
+    //         root = root.left;
+    //     }
+    //     return root;
+    // }
+
+
+    public static Node delete(Node root, int val){
+        // to search the element
+        if(root.data<val){
+            delete(root.right, val);
+        }else if(val<root.data){
+            delete(root.left, val);
+        }else {// when we find the value 
+            // 1. no child
+            if(root.left== null && root.right == null){
                 return null;
             }
 
-            // case 2 - single child
-            if (root.left == null) {
+            // 2. one child
+            if(root.left == null){
                 return root.right;
-            } else if (root.right == null) {
+            }if(root.right == null){
                 return root.left;
             }
 
-            // case 3 -  both children
-            /* so we will return the in order succesor */
-            Node is = findInOrderSuccessor(root.right);
-            /*
-             * we will find it from left most node in right subtree because
-             * In order successor is present in right subtree only
-             */
-
-            // replace root.data with InorderSuccesor
-            root.data = is.data;
-
-            // delete that node of inorder succesor
-            root.right = delete(root.right, is.data); // this funcitons deletes the requried node and return the
-                                                      // remaining branch
-
+            // 3. two children
+            Node IS= inordersuccessor(root.right);
+            root = delete(root.right, IS.data);
         }
-
         return root;
-
     }
 
-    public static Node findInOrderSuccessor(Node root) {
-        while (root.left != null) {
+    public static Node inordersuccessor(Node root){
+        while(root.left != null){
             root = root.left;
         }
         return root;
     }
-
     public static void printInRange(Node root, int k1, int k2) {
 
         // base case
@@ -179,8 +210,8 @@ public class a2_delete_Node {
         inorder(root);
         System.out.println();
 
-        // delete(root, 1);
-        // inorder(root);
+        delete(root, 5);
+        inorder(root);
 
         //printInRange(root, 5, 11);
 
@@ -188,7 +219,7 @@ public class a2_delete_Node {
 
        // printRootToLeaf(root,new ArrayList<>());
 
-       System.out.println(isValidBST(root, null, null));
+    //    System.out.println(isValidBST(root, null, null));
 
     }
 }
