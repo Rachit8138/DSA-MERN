@@ -26,12 +26,7 @@ public class a8_Kth_Ancestror {
         int leftDist = KthAncestor(root.left,n,k);
         int rightDist = KthAncestor(root.right,n,k);
 
-        if(leftDist == -1 && rightDist == -1){
-            return -1;
-        }
-
         int max = Math.max(leftDist,rightDist);
-
         if(max+1 == k){
             System.out.println(root.data);
         }

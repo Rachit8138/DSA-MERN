@@ -42,7 +42,7 @@ public class a6_last_comon_ancestor {
 
         ArrayList <Node> path1 = new ArrayList<>();
         ArrayList <Node> path2 = new ArrayList<>();
-        
+        // gives us the path like root to n1 into arraylist path1
         getPath(root,n1,path1);
         getPath(root,n2,path2);
 
@@ -54,7 +54,7 @@ public class a6_last_comon_ancestor {
             }
         }
 
-        //last equal node = 
+        //last equal node = i-1 th 
         Node lca = path1.get(i-1);
         return lca;
     }
@@ -69,7 +69,7 @@ public class a6_last_comon_ancestor {
         //if leftLca = null then rightLca = value and viceVersa
         if(leftLca == null){
             return rightLca;
-        }
+        } 
         if(rightLca == null){
             return leftLca;
         }

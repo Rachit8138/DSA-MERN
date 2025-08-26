@@ -95,7 +95,7 @@ public class a7_Min_distance {
          */
 
 
-        System.out.println(minDist(root,4,7));
+        System.out.println(minDist(root,3,5));
 
     }
 }
