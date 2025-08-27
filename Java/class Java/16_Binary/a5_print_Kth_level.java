@@ -28,7 +28,6 @@ public class a5_print_Kth_level {
         kLevel(root.left,level+1,K);
         //for right side
         kLevel(root.right,level+1,K);
-
     }
     public static void main(String args[]){
 
