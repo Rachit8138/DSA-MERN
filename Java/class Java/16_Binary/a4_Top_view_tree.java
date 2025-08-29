@@ -28,6 +28,7 @@ public class a4_Top_view_tree {
     }
 
     public static void topView(Node root) {
+        if (root == null) return;
 
         // Level order trevers
 
@@ -36,24 +37,10 @@ public class a4_Top_view_tree {
 
         int min = 0, max = 0;
         q.add(new Info(root, 0));
-        q.add(null);
-
         while (!q.isEmpty()) {
             Info curr = q.remove();
-
-            if (curr == null) {
-                if (q.isEmpty()) {
-                    break;
-                } else {
-                    q.add(null);
-                    // this null is for next line
-                }
-            } else {
-
                 // if the key is not added before(Unique key)
-                if (!map.containsKey(curr.hd)) {
-                    map.put(curr.hd, curr.node);
-                }
+                map.putIfAbsent(curr.hd, curr.node);
 
                 // checking the left side of the node
                 // level order treversal step
@@ -67,12 +54,7 @@ public class a4_Top_view_tree {
                     q.add(new Info(curr.node.right, curr.hd + 1));
                     max = Math.max(max, curr.hd + 1);
                 }
-
-                
-
             }
-
-        }
 
         //printing the hashmap
         for(int i = min; i<=max; i++){
