@@ -55,11 +55,8 @@ public class a2_diameter {
         return tree;
 
     }
-
     //function to calculate sum of tree
-
     public static int sum(Node root){
-
         //base case
         if(root == null){
             return 0;
@@ -72,8 +69,6 @@ public class a2_diameter {
 
         return sum;
     }
-
-
     //function to calculate diameter of tree // O(n^2)
     public static int diameter(Node root){
 
@@ -91,6 +86,32 @@ public class a2_diameter {
 
         return Math.max(selfDiameter,Math.max(leDia,rgDia));
     }
+
+    /* 
+     * most optimized way 
+        // trying to calulate height and diameter at the same time. 
+     class Solution {
+    // Global variable to store the diameter
+    public int diameter = 0;
+    public int diameterOfBinaryTree(TreeNode root) {
+        height(root);
+        return diameter;
+    }
+
+    // Helper function to calculate height
+    public int height(TreeNode node) {
+        if (node == null) return 0;
+        int leftHeight = height(node.left);
+        int rightHeight = height(node.right);
+        // Update diameter at this node
+        diameter = Math.max(diameter, leftHeight + rightHeight);
+        // Return height of this subtree
+        return 1 + Math.max(leftHeight, rightHeight);
+    }
+}
+
+     */
+
 
     //function to calculate diameter //T.C = O(n)
     public static Info diameter2(Node root){
@@ -155,3 +176,5 @@ public class a2_diameter {
         System.out.println("Diameter of tree optimized way is = "+diameter2(root).diam);
     }
 }
+
+

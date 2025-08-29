@@ -78,8 +78,6 @@ public class a4_Top_view_tree {
         for(int i = min; i<=max; i++){
             System.out.print(map.get(i).data+" ");
             }
-
-
     }
 
     public static void main(String args[]) {

@@ -104,7 +104,7 @@ public class a1_Order_treverse {
             Queue<Node> q = new LinkedList<>();
             // initial steps
             q.add(root);
-            // q.add(null);
+            q.add(null);
             while (!q.isEmpty()) {
                 Node currNode = q.remove();
                 /* this section is especially for printing next line */
