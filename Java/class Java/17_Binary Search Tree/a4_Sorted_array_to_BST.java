@@ -23,8 +23,7 @@ public class a4_Sorted_array_to_BST {
 
     public static Node createBST(int arr[],int st, int end){
 
-        if(st>end)
-        return null;
+        if(st>end) return null;
 
         int mid = (st+((end-st)/2));
 
