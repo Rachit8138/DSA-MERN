@@ -1,5 +1,5 @@
 import java.util.*;
-public class Connect_N_Ropes {
+public class a6_Connect_N_Ropes {
     public static void main(String args[]){
         int ropes[] = {2,3,3,4,6};
 

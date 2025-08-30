@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class heap_sort {
+public class a4_heap_sort {
 
     public static void heapify(int arr[],int i, int size){
         int left = 2*i+1;

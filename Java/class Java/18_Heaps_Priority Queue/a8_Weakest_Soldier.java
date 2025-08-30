@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Weakest_Soldier  {
+public class a8_Weakest_Soldier  {
 
     static class Row implements Comparable<Row>{
         int soldiers;

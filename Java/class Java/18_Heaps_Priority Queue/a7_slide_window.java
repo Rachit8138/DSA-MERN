@@ -1,5 +1,5 @@
 import java.util.*;
-public class slide_window{
+public class a7_slide_window{
 
     static class Pair implements Comparable<Pair>{
         int val;

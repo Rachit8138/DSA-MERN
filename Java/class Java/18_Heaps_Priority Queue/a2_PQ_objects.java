@@ -1,6 +1,6 @@
 import java.util.PriorityQueue;
 
-public class PQ_objects {
+public class a2_PQ_objects {
 
     static class Student implements Comparable<Student>{
         int rank;

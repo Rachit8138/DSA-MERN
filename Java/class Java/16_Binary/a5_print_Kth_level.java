@@ -12,8 +12,9 @@ public class a5_print_Kth_level {
         }
 
     }
-
+/* 
     public static void kLevel(Node root, int level, int K){
+    
         //base case
         if(root == null){
             return;
@@ -29,6 +30,10 @@ public class a5_print_Kth_level {
         //for right side
         kLevel(root.right,level+1,K);
     }
+ */
+
+ public static void kLevel(Node root, int level )
+
     public static void main(String args[]){
 
         Node root = new Node(1);

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class nearest_cars {
+public class a5_nearest_cars {
 
     static class Point implements Comparable<Point>{
         int x,y;

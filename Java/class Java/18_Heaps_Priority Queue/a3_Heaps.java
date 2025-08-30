@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Heaps {
+public class a3_Heaps {
 
     static class Heap {
 
