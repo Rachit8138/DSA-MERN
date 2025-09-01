@@ -161,15 +161,8 @@ public class a2_delete_Node {
         if(root == null){
             return true;
         }
-
-        if(min != null &&  root.data <= min.data ){
-            return false;
-        }
-
-        else if(max != null && max.data <= root.data){
-            return false;
-        }
-
+        if(min != null &&  root.data <= min.data ) return false;
+        else if(max != null && max.data <= root.data) return false;
         return isValidBST(root.left,min,root) && isValidBST(root.right,root,max);
     }
 
