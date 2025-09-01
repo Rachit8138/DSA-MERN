@@ -36,18 +36,14 @@ public class a5_Balancing_Bst {
     }
 
     public static Node makeBST(ArrayList<Integer> arr,int st, int end){
-
         if(st>end){
             return null;
         }
-
         int mid = (st+end)/2;
         Node root = new Node(arr.get(mid));
         root.left = makeBST(arr,st,mid-1);
         root.right = makeBST(arr,mid+1,end);
-
         return root;
-
     }
     
     public static Node BalanceBst(Node root){
@@ -55,17 +51,10 @@ public class a5_Balancing_Bst {
         //step 1 get the sorted arr of the tree
         ArrayList <Integer> arr = new ArrayList<>();
         getInorder(root,arr);
-
         //step 2 make a BST using sorted arr
         root = makeBST(arr,0,arr.size()-1);
-
         return root;
-        
-
     }
-
-
-
     public static void main(String args[]) {
         Node root = new Node(8);
         root.left = new Node(6);

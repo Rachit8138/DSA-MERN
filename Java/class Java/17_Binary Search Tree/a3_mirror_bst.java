@@ -23,6 +23,12 @@ public class a3_mirror_bst {
         root.left = rightMirror;
         root.right = leftMirror;
 
+
+/*         
+        cannot do in this way because there will be error in the value
+        root.left = mirror(root.right);
+        root.right = mirror(root.left);
+ */
         return root;
     }
 
