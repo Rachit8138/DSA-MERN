@@ -1,5 +1,5 @@
 import java.util.*;
-public class Iteration_hashset {
+public class a7_Iteration_hashset {
     public static void main(String args[]){
         HashSet<Integer> hs = new HashSet<>();
 

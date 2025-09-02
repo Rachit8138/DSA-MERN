@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Iteration{
+public class a0_Iteration{
     public static void main(String args[]){
 
         HashMap <String,Integer> hm = new HashMap<>();

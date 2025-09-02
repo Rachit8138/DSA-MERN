@@ -1,5 +1,5 @@
 import java.util.*;
-public class largest_subArray_sum_0 {
+public class a12_largest_subArray_sum_0 {
     public static void main(String args[]){
         int arr[] = {15,-2,2,-8,1,7,10,23};
 

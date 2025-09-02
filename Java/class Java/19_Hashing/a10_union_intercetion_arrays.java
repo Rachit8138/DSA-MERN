@@ -1,5 +1,5 @@
 import java.util.*;
-public class union_intercetion_arrays {
+public class a10_union_intercetion_arrays {
     public static void main(String args[]){
         int arr1[] = {7,3,9};
         int arr2[] = {6,3,9,2,9,4};

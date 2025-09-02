@@ -1,5 +1,5 @@
 import java.util.*;
-public class linkedHashSet {
+public class a8_linkedHashSet {
     public static void main(String args[]){
         
         HashSet <Integer> hs = new HashSet<>();

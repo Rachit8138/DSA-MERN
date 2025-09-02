@@ -1,5 +1,5 @@
 import java.util.*;
-public class Count_subArray_sum_k {
+public class a13_Count_subArray_sum_k {
     public static void main(String args[]){
 
         int arr[] = {10,2,-2,-20,10};
