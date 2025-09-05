@@ -94,7 +94,7 @@ public class a6_last_comon_ancestor {
             4   5 6   7
 
          */
-    System.out.println(lca(root,4,5).data);
+    // System.out.println(lca(root,4,5).data);
     System.out.println(optimizedLca(root,4,7).data);
     } 
 }

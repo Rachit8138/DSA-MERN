@@ -157,12 +157,12 @@ public class a1_Order_treverse {
         /* Creates a BinaryTree object.Calls buildTree(nodes) to create the tree. */
         Node root = tree.buildTree(nodes);
         // System.out.println();
-        tree.preOrder(root);
+        // tree.preOrder(root);
         // System.out.println();
         // tree.inOrder(root);
         // System.out.println();
         // tree.postOrder(root);
-        System.out.println();
+        // System.out.println();
         tree.levelOrder(root);
     }
 
