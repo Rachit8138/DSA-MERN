@@ -41,7 +41,6 @@ public class a4_Top_view_tree {
             Info curr = q.remove();
                 // if the key is not added before(Unique key)
                 map.putIfAbsent(curr.hd, curr.node);
-
                 // checking the left side of the node
                 // level order treversal step
 

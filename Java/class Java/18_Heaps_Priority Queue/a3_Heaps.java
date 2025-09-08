@@ -33,7 +33,7 @@ public class a3_Heaps {
             return arr.get(0);
         }
 
-        private void heapify(int i) {
+        private void heapify(int i) {// fix the heap
             int left = 2 * i + 1;
             int right = 2 * i + 2;
             int minIdx = i; // considering it as a min indx

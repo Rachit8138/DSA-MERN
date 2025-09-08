@@ -22,10 +22,8 @@ public class a9_Transform_to_sum_tree {
 
         //saving data to a another variable
         int data = root.data;
-
         int newLeft = root.left == null ? 0 : root.left.data;
         int newRight = root.right == null ? 0 : root.right.data;
-
         //changing the data
         root.data = newLeft+leftChild+newRight+rightChild;
 

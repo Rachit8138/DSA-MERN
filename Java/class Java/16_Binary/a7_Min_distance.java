@@ -55,7 +55,6 @@ public class a7_Min_distance {
         if(leftDist == -1 && rightDist == -1){
             return -1;
         }
-
         else if(leftDist == -1){
             return rightDist+1;
         }
