@@ -48,7 +48,7 @@ public class a4_heap_sort {
         heapSort(arr);
         int n = arr.length;
         //print 
-        for(int i = 0; i<n; i++){
+            for(int i = 0; i<n; i++){
             System.out.print(arr[i]+" ");
         }
     }

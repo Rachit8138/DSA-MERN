@@ -40,7 +40,7 @@ public class a3_Heaps {
 
             // rearringing the root, left child, and right child
 
-            // also check weather our left child or right chile exist or not
+            // also check weather our left child or right chile exist or not, is it just child node
             if (left < arr.size() && arr.get(minIdx) < arr.get(left)) { // (2) if we change the sign here to make it accending order
                 minIdx = left;
             }
@@ -66,30 +66,45 @@ public class a3_Heaps {
         // to remove form heap
         // removing minimum element
 
-        public int remove() {
+        // public int remove() {
+        //     int data = arr.get(0);
+
+        //     // step 1 swap 1st element and last element
+        //     int temp = arr.get(0);
+        //     arr.set(0, arr.get(arr.size() - 1));
+        //     arr.set(arr.size() - 1, temp);
+
+        //     // step 2 delete the last node
+        //     arr.remove(arr.size() - 1);
+
+        //     // step 3 fix the heap
+        //     heapify(0);// heapify for the root
+        //     return data;
+
+        // }
+
+        private int remove(){
+        
             int data = arr.get(0);
+            // swap 1st and last node 
+            int temp = arr.get(0); 
+            arr.set(0,arr.get(arr.size()-1));
+            arr.set((arr.size()-1),temp);
+            // remove the last element 
+            arr.remove(arr.size()-1);
 
-            // step 1 swap 1st element and last element
-            int temp = arr.get(0);
-            arr.set(0, arr.get(arr.size() - 1));
-            arr.set(arr.size() - 1, temp);
-
-            // step 2 delete the last node
-            arr.remove(arr.size() - 1);
-
-            // step 3 fix the heap
+            // heapify 
             heapify(0);
-
             return data;
-
         }
-
+        
         public boolean isEmpty() {
 
             return arr.size() == 0;
         }
 
     }
+
 
     public static void main(String args[]) {
 
