@@ -14,7 +14,7 @@ public class a {
             }
         }
         sum=sum+s.substring(0, a);
-        return sum;
+        return sum; 
     }
     public static void main(String[] args) {
     
