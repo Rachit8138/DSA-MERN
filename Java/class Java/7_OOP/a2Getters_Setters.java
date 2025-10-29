@@ -46,3 +46,12 @@ class Pen{
         this.tip = newTip;
     }
 }
+// if you want to find the reference of the variable this, keyword is used, 
+// this is helpful when you have vaiables with same name 
+// this keyword is used to refer to the current object 
+
+// encapsulation is defined as the wrapping up of data and methods under a singlue unit. It aslos implements data hiding. 
+
+
+// simple meaning 
+// single entity wrapping data and methods and use access specifier for data hiding 
