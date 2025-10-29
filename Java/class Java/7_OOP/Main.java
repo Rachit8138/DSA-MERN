@@ -30,8 +30,12 @@ class Car {
 public class Main {
     public static void main(String[] args) {
         // Creating an object of the Car class
-        Car myCar = new Car("Toyota", "Corolla", 2020);
-        
+        Car myCar = new Car("Toyota", "Corolla", 2020);//Java allocates memory for a new Car object
+        /* Constructor Called: The Car constructor is invoked with three arguments:
+
+"Toyota" → assigned to make
+"Corolla" → assigned to model
+2020 → assigned to year */
         // Accessing object's attributes
         System.out.println("Car make: " + myCar.make);  // Output: Toyota
         System.out.println("Car model: " + myCar.model);  // Output: Corolla
