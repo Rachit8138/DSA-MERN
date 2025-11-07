@@ -28,7 +28,7 @@ class Peen{
     String color;
     int tip;
 
-    //Giving initial values using a contructor
+    //Giving initial values using a contrtor
     Peen(String newColor, int newTip){
 
         this.color = newColor;

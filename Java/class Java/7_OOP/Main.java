@@ -50,5 +50,36 @@ public class Main {
     
 
 
+/* 
 
+Program starts executing from main() in the Main class.
+
+new Car("Toyota", "Corolla", 2020) is called →
+
+Java allocates memory for a new Car object in the heap.
+
+The constructor Car(String, String, int) runs and sets:
+
+this.make = "Toyota"
+
+this.model = "Corolla"
+
+this.year = 2020
+
+The reference (memory address of that object) is stored in the stack variable myCar.
+
+The program prints the object's fields:
+
+"Car make: Toyota"
+
+"Car model: Corolla"
+
+"Car year: 2020"
+
+myCar.startEngine() is called → executes the method inside Car class → prints:
+👉 "The engine is starting..."
+
+Program ends successfully.
+
+ */
 

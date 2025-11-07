@@ -10,7 +10,6 @@ public class a1 {
         // myAcc.password = "abs";// it is not visible 
         myAcc.setPassword("ABC");// ACCESSED  by publi modifier 
     }
-    
 }
 class Bankaccount{
     public String username; 

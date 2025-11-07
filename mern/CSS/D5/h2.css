@@ -23,7 +23,7 @@ h2{
     font-weight:900;
     letter-spacing: 2px;
     line-height:1.5px;
-    text-decoration: teal double underline;
+    text-decoration: teal double underline;/* underline */
     text-transform:uppercase;
 }
 

@@ -22,11 +22,6 @@ class Deer extends Animal{
         System.out.println("eat grass");
 }
 }
-
-
-
-
-
 // method overloading
 class Calculator{
     int sum(int a, int b){
