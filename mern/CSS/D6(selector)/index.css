@@ -65,7 +65,7 @@ input[type="password"]{
 input[type]{
     background-color: ghostwhite;
 }
-myId p{
+#myid p {
     color:green;
 }
 
