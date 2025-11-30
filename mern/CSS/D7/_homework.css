@@ -1,0 +1,39 @@
+#mybox{
+    height: 150px;
+    width: 300px;
+    font-size: 20px;
+    background-color: grey;
+    border: 5px black dotted;
+    margin: 20px 1em 40px 2em; /* here 1em and 2em are calculated with respect to the root element font size */
+    padding: 1em; /* here also 1em is calculated with respect to root element font size */
+
+}
+
+.box{
+    height: 100px;
+    width:100px;
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    /* inline-block is used' */
+}
+
+/* question no 3 */
+li{
+    display:inline;
+}
+
+/* 
+Li (list items) have their display property set to “list-item” by default which
+makes them a bulleted list item.
+When this property is reset by you to “inline”, then the bullet points also
+disappear. In a way, we override the default settings with our CSS.
+*/
+
+
+/* 
+inline is for texts 
+inline block is for picture that needs spacing and all 
+inline block allows you to set a width and height and for which inline does not 
+*/

@@ -1,0 +1,42 @@
+#container{
+
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border: 5px solid rgb(31, 110, 132);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color:grey;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#nav{
+    height:50px;
+    width: 900px;
+    background-color: pink;
+    border: 3px solid rgb(74, 171, 215);
+    border-radius: 10px;
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    align-items: center;
+
+
+
+}
+.name{
+    font-size: 24px;
+    width: 80px;
+    
+}

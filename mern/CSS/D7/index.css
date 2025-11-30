@@ -41,6 +41,7 @@ h2{
 }
 
 span{
-    display: block;
+    display: block ;
+    color: blue;
     background-color: green;
 }

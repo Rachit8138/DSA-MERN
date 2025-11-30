@@ -1,3 +1,4 @@
+/* % */
 h1{
     border:2px solid black;
     width: 50%;/* over here the parent is the whole screen */
@@ -15,6 +16,7 @@ h1{
     width:100px;
     background-color: cornflowerblue;
     margin-left:10%;/* this takes the 10% of parent size (width)of 400px ie40px */
+    /* here margin is given on the basisw of width  */
 }
 
 /* for em */
@@ -32,13 +34,20 @@ h1{
     background-color: cornflowerblue;
     font-size: 3em; /* this is actually in times */
     padding: 1em;
+    /* 
+    Padding in em also uses the element’s own font-size, not the parent’s.
+
+So:
+
+1em = 60px
+    */
 }
 
 button{
     border:5px solid green;
     border-radius: 50px;
     font-size: 50px;
-    padding-left: 1em;/* over here em is taken with respect to font size */
+    padding-left: 1em;/* over here em is taken with respect to font size (if font size is 50 px then 1em is 50 px)*/
     padding-right: 1em;
 }
 
