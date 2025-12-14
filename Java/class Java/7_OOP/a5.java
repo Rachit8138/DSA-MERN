@@ -1,4 +1,4 @@
-public class OOPS{
+public class a5{
     public static void main(String[] args) {
     Calculator calc = new Calculator();
     System.out.println(calc.sum(1,2));

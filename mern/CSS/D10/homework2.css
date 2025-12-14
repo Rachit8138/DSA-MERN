@@ -1,0 +1,26 @@
+.container{
+    width: 100vh;
+    height: 100vh;/* visible height  */
+    display: grid;
+    grid-template-columns: (3,1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+.container div {
+    background-color: pink;
+    font-size: 1.5rem;
+}/* Layout positions */
+
+.header{
+    grid-column: 1/ span 2;
+}
+.navigation{
+    grid-column: 1/ span 2;
+}
+.sidebar{
+    grid-row:3/12;
+}
+.main{
+    grid-row:3 / 12
+
+}
