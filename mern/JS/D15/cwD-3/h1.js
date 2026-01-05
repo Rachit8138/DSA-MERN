@@ -12,7 +12,6 @@ console.log(fruits) // ["banana","apple", "litchi"]
 
 // Strings: Immutable
 // A string's value cannot be changed once it is created. Any operation that appears to modify a string actually creates a new string.
-Example:
 let str = "Hello";
 str[0] = "J"; // Attempting to modify a character
 console.log(str); // Output: "Hello" (unchanged)
