@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class a_6 {
     public static void bubbleSort(int arr[]) {
@@ -13,6 +12,18 @@ public class a_6 {
         }
         printarray(arr);
     }
+
+
+
+
+
+    /* 
+    
+    only insertion sort imp, and theory of bubble sort 
+    
+    
+    
+    */
 
     public static void selectionSort(int arr[]) {
         for (int i = 0; i < arr.length - 1; i++) {
@@ -31,19 +42,20 @@ public class a_6 {
     }
 
     public static void insertionSort(int arr[]) {
-        for(int i=1; i<arr.length; i++){
-        int curr=i;
-        int prev = i-1;
-        //finding out the correct pos to insert
-        while(prev >=0 && arr[prev] > arr[curr]) {
-            arr[prev+1] = arr[prev];
+    for (int i = 1; i < arr.length; i++) {
+        int curr = arr[i];   // VALUE, not index
+        int prev = i - 1;
+
+        while (prev >= 0 && arr[prev] > curr) {
+            arr[prev + 1] = arr[prev];
             prev--;
         }
-        // insertion
-        arr[prev+1] = arr[curr];
+
+        arr[prev + 1] = curr;
     }
     printarray(arr);
 }
+
 
     public static void countingSort(int arr[]) {
     // Find the largest value in the array to determine the size of the count array
@@ -81,10 +93,10 @@ public class a_6 {
             int arr[] = { 5, 4, 9, 1, 2, 3 };
             // bubbleSort(arr);
             // selectionSort(arr);
-            // insertionSort(arr);
-            countingSort(arr);
+            insertionSort(arr);
+            // countingSort(arr);
             // Arrays.sort(arr);
-            printarray(arr);
+            // printarray(arr);
         }
 
 }

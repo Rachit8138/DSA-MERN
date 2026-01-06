@@ -1,31 +1,32 @@
 public class a0 {
- 
-
-
 
     public static void main(String args[]) {
-        int numbers[] = { 1, 2, 3, 4,5, 6,7};
-        int key = 3;
-        // for finding the index of a number
-        if (binarySearch(numbers, key) == -1) {             //very important
-            System.out.println("not found");
-        } else {
-            System.out.println("index for key is " + binarySearch(numbers, key));
-        }
+        int height[] = { 4, 2, 0, 3, 2, 5 };
+        System.out.println(trapWater(height));
     }
 
-    public static int binarySearch(int numbers[], int key){
-        int start =0; int end = numbers.length -1; int mid;
-        while(start<=end){
-             mid = start -(start-end)/2;
-            if(numbers[mid]>key){
-                end = mid-1;
-            }else if(numbers[mid]<key){
-                start = mid+1;
-            }else{
-                return mid;
-            }
+    public static int trapWater(int height[]) {
+        int n = height.length;
+        int leftmax[] = new int[n];
+        int rightmax[] = new int[n];
+        leftmax[0] = height[0];
+        rightmax[n - 1] = height[n - 1];
+
+        // for left max
+        for (int i = 1; i < n; i++) {
+            leftmax[i] = Math.max(leftmax[i - 1], height[i]);
         }
-        return -1;
+        // for right max
+        for (int j = n - 2; j >=0; j--) {
+            rightmax[j] = Math.max(rightmax[j + 1], height[j]);
+        }
+
+        int water = 0;
+        for (int k = 0; k < n; k++) {
+            water += Math.min(leftmax[k], rightmax[k]) - height[k];
+        }
+        return water;
+
     }
+
 }
