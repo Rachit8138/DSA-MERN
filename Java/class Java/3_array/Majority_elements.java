@@ -1,6 +1,6 @@
   class Solution {
 
-    public int majorityElement(int[] nums) {
+    public int (int[] nums) {
         int majority = nums[0], lead = 1;
 
         for (int idx = 1; idx < nums.length; idx++) {

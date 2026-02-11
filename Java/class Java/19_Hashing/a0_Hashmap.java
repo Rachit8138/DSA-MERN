@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.HashMap;
 
 public class a0_Hashmap{
     public static void main(String args[]){
@@ -15,12 +15,11 @@ public class a0_Hashmap{
         System.out.println(hp);
 
         //remove
-        hp.remove("four");
+       System.out.println( hp.remove("four"));;
         System.out.println(hp);
         
         //get
-        int a = hp.get("one");
-        System.out.println(a);
+        System.out.println(hp.get("one"));
 
         //contains
 

@@ -59,7 +59,7 @@ public class a1 {
 
     public static void count_set_bit(int n){
         int count=0;
-        while(n>0){     // check LSB
+        while(n>0){     // check LSB    
             if ((n&1)!=0){
                 count++;
             }
@@ -81,14 +81,14 @@ public class a1 {
     }       
     public static void main(String args[]) {
         // oddoreven_using_and(3);
-        // get_ith_Bit(15, 2); // with which you will be adding or something that is called bitmask
+        get_ith_Bit(15, 2); // with which you will be adding or something that is called bitmask
         // set_ith_Bit(10, 2); // remember the concept of bitmask
         // clr_ith_Bit(10, 1);
         // upd_ith_Bit(15, 2, 1);
-        clr_range_Bit(10, 2, 4);
+        // clr_range_Bit(10, 2, 4);
         // clr_last_i_Bit(123, 3);
         // System.out.println(ispoweroftwo(9));
         // count_set_bit(15);
-        // fast_expo(5,3);
+        // fast_expo(5,4);
     }
 }

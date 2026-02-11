@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class Basics {
     public static void main(String args[]) {
@@ -16,12 +16,13 @@ public class Basics {
             }
         }
 
-        //Printing Output
+        //Printi ng Output
         for(int i=0; i<n; i++) {
             for(int j=0; j<m; j++) {
                 System.out.print(marks[i][j] +" ");
             }
             System.out.println();
         }
+        sc.close();
     }
 }

@@ -1,6 +1,3 @@
-import java.util.*;
-
-//Problem : Print a Matrix in Spiral Fashion
 
 public class SpiralMatrix {
     public static void printSpiral(int matrix[][]) {
@@ -43,8 +40,8 @@ public class SpiralMatrix {
 
     public static void main(String args[]) {
         int matrix[][] = {{1, 2, 3},
-                        {5, 6, 7},
-                        {9, 10, 11}};
+                          {5, 6, 7},
+                          {9,10,11}};
         printSpiral(matrix);
     }
 }

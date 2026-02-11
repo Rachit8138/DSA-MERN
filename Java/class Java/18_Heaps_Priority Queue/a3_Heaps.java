@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.ArrayList;
 
 public class a3_Heaps {
 
@@ -15,8 +15,8 @@ public class a3_Heaps {
 
             // (1) if we change the sign below to make it accending order 
             while (arr.get(x) > arr.get(par)) { // T.C log(n)
-
-                // swap
+                // while loop goes to login times, i am going toward parents, as there are levels 
+                // sw ap
                 int temp = arr.get(x);
                 arr.set(x, arr.get(par));
                 arr.set(par, temp);
@@ -28,7 +28,7 @@ public class a3_Heaps {
             }
         }
 
-        // to see the last element
+        // to get min in heap ie. parent is minimum.
         public int peek() {
             return arr.get(0);
         }
@@ -66,22 +66,22 @@ public class a3_Heaps {
         // to remove form heap
         // removing minimum element
 
-        // public int remove() {
-        //     int data = arr.get(0);
+        public int remove() {
+            int data = arr.get(0);
 
-        //     // step 1 swap 1st element and last element
-        //     int temp = arr.get(0);
-        //     arr.set(0, arr.get(arr.size() - 1));
-        //     arr.set(arr.size() - 1, temp);
+            // step 1 swap 1st element and last element
+            int temp = arr.get(0);
+            arr.set(0, arr.get(arr.size() - 1));
+            arr.set(arr.size() - 1, temp);
 
-        //     // step 2 delete the last node
-        //     arr.remove(arr.size() - 1);
+            // step 2 delete the last node
+            arr.remove(arr.size() - 1);
 
-        //     // step 3 fix the heap
-        //     heapify(0);// heapify for the root
-        //     return data;
+            // step 3 fix the heap
+            heapify(0);// heapify for the root
+            return data;
 
-        // }
+        }
 
         private int remove(){
         

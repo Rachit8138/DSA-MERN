@@ -16,15 +16,14 @@ public class shortestPath {
             }
             else if(dir=='E'){
                 x++;
-                }
-
+            }
         }
         System.out.println((float)Math.sqrt(x*x+y*y));// better if you typecast 
     }
 
     public static void main(String args[]) {
         
-        String path="NSWWWS";
+        String path="NSWE";
         shortestPath(path);
 
         // String str="HelloWorld";
