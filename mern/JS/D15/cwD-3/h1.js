@@ -37,7 +37,6 @@ console.log(arr); // Output: [10, 2, 3]
 /* Key Difference:
 Strings (Immutable): Cannot be changed. Any operation creates a new string.
 Arrays (Mutable): Can be directly modified without creating a new array. */
-
 /* 
 // Reassigning a variable (name = "mohit") works because it creates a new string and points the variable to it. you cannot use the function to change the value of string. but you can do that in array using push function 
 */

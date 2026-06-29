@@ -15,24 +15,20 @@ alert(`${name} is ${age} years old`);/* ${} // back ticks */
 let m=2
 
 switch(m){
-        case 1: console.log("jan, feb, mar"); 
+        case 1: 
+        console.log("jan, feb, mar"); 
         break; 
-        case 2: console.log("april, may, jun");
+        case 2: 
+        console.log("april, may, jun");
         break;
-        case 3: console.log("july, aug, sep");
+        case 3:
+        console.log("july, aug, sep");
         break;
-        case 4: console.log("oct, nov, dec");
+        case 4: 
+        console.log("oct, nov, dec");
         break;
-        default: console.log("invalid");
-}
-
-// question no 4
-let char="applef"
-
-if ((char[0]=='a' || char[0]=='A') && char.length>5){
-    console.log("golden String");
-    }else{
-    console.log("not")
+        default: 
+        console.log("invalid");
 }
 
 // question no 5&6 are very easy 
