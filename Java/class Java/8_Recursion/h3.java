@@ -14,6 +14,6 @@ public class h3{
         }
     }
     public static void main(String args[]) {
-        printBinStrings(3, 0, "");
+        printBinStrings(4, 0, "");
     }
 }

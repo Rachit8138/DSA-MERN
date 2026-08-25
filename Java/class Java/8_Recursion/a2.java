@@ -17,7 +17,7 @@ public class a2 {
 
     public static int Tilingproblem(int n){//2*n i.e. floor size
         // base case
-        if (n==0 || n==1||n==2||n==3||n==4){
+        if (n==0 || n==1|| n==2) {
             return 1;
         }
 
@@ -39,7 +39,7 @@ public class a2 {
 
     //kaam to check if it exits or not
     char currChar=str.charAt(idx);
-    if(map[currChar-'a']==true){
+    if(map[currChar-'a']==true){//already exists
         removeDuplicates(str, idx+1, newStr, map);
     }else{
         map[currChar-'a']=true;
@@ -58,8 +58,8 @@ public static int friendspairing(int n){
 
      public static void main(String args[]) {
         // towerOfHanoi(7, "A", "B", "C");
-        //System.out.println(Tilingproblem(8));
-        //removeDuplicates("hellow  orld",0,new StringBuilder(""), new boolean[26] );
-        System.out.println(friendspairing(3));
+        // System.out.println(Tilingproblem(5));
+        removeDuplicates("hellow  orld",0,new StringBuilder(""), new boolean[26] );
+        // System.out.println(friendspairing(3));
     }
 }

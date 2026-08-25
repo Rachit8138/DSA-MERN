@@ -34,7 +34,7 @@ public class a1 {
         }
         
         // Recursive call: get the length of the substring and add 1
-        return length(str.substring(1)) + 1;
+        return length(str.substring(1)) + 1;/* supposely it work be */
     }
 
     public static int countSubstrs(String str, int i, int j, int n) {
@@ -79,12 +79,12 @@ public class a1 {
     }
     
     public static void main(String[] args) {
-        int arr[] = { 3, 2, 4, 5, 6, 2, 7, 2, 2 };
-        all_occ(arr, 2, 0);
-        System.out.println();
+        // int arr[] = { 3, 2, 4, 5, 6, 2, 7, 2, 2 };
+        // all_occ(arr, 2, 0);
+        // System.out.println();
 
-        printDigits(1234);
-        System.out.println();  // Print a newline after the digits
+        // printDigits(1234);
+        // System.out.println();  // Print a newline after the digits
     
 
         String str="abcde";

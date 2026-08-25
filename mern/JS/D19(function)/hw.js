@@ -68,7 +68,8 @@ function vowel(str) {
             count++;
         }
     }
-    console.log(count);
+    console.log(count); 
+    
 }
 
 vowel('australia')
@@ -80,3 +81,4 @@ function generator(start, end){
     console.log(Math.floor(Math.random()*diff)+start);
 }
 generator(100,200)
+

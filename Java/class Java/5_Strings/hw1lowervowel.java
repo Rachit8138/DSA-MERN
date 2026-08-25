@@ -23,6 +23,12 @@ public class hw1lowervowel {
             // Convert strings into char arrays
             char[] str1CharArray = str1.toCharArray();
             char[] str2CharArray = str2.toCharArray();
+            // Sort the char arrays
+            Arrays.sort(str1CharArray);
+            Arrays.sort(str2CharArray);
+            // Compare the sorted char arrays
+             return Arrays.equals(str1CharArray, str2CharArray);//this checks: Same length Same characters Same order
+        } else return false;
 /* 
 What happens:
 
@@ -37,12 +43,7 @@ Strings cannot be sorted
 Arrays can be sorted
 
 */
-            // Sort the char arrays
-            Arrays.sort(str1CharArray);
-            Arrays.sort(str2CharArray);
-            // Compare the sorted char arrays
-             return Arrays.equals(str1CharArray, str2CharArray);//this checks: Same length Same characters Same order
-        } else return false;
+            
     }
 
     
