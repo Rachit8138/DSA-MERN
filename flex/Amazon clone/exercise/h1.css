@@ -1,0 +1,23 @@
+/* #box{
+    background-color: blue;
+}
+
+.heading{
+    color: red;
+}
+button{
+    background-color: green;
+} */
+
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: "TIMES NEW ROMAN";
+}
+
+#outer{
+    font-size: 20px;
+}
+#inner{
+    font-size: 30px;
+}
