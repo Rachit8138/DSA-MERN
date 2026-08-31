@@ -1,20 +1,13 @@
-// let promise = new Promise((resolve, reject)=>{
-//     console.log("i am promise");
-//     resolve("some error "); // if you want to fulfill your promise // make even reject
-// })
+// function getData(dataId) {
+//   return new Promise((resolve, reject) => {// generally api java hamile call garchau yesari nae promise return garcha  
+//     //2s
+//     setTimeout(() => {
+//       console.log("data", dataId);// if we successfully return the data then resolve it 
+//       resolve("success");
+//     }, 5000);
+//   });
+// }
 
-function getData(dataId, getNextData) {
-  return new Promise((resolve, reject) => {// generally api java hamile call garchau yesari nae promise return garcha  
-    //2s
-    setTimeout(() => {
-      console.log("data", dataId);// if we successfully return the data then resolve it 
-      resolve("success");
-      if (getNextData) {
-        getNextData();
-      }
-    }, 5000);
-  });
-}
 // /* to test  */
 // let promise = getData(131)
 // undefined
@@ -32,18 +25,24 @@ function getData(dataId, getNextData) {
 // [[PromiseResult]]: "success"
 
 // generally we don't create promise, we are returned promise 
+const getPromise = (data) => {
+    return new Promise((resolve, reject) => {
+        console.log("I am a promise");
+        setTimeout(() => {
+            resolve(data);
+        }, 3000);
+    });
+};
 
-/* if we couldnot send the data, we reject the api, throwing error   */
-// function getData(dataId, getNextData) {
-//   return new Promise((resolve, reject) => {// generally api java hamile call garchau yesari nae promise return garcha  
-//     //2s
-//     setTimeout(() => {
-//       reject("error");
-//       if (getNextData) {
-//         getNextData();
-//       }
-//     }, 5000);
-//   });
-// }
+let promise = getPromise(12);
+console.log("Promise:", promise);
+promise.then((res) => {
+    console.log("promise fulfilled", res);
+});
 
-// generally we don't have ro resolve and reject generally other do this owrk 
+promise.catch((err) => {
+
+    console.log("rejected", err);
+    console.log("Promise:", promise);
+
+});
