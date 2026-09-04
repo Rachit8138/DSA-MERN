@@ -1,0 +1,14 @@
+.heading-class {
+    color: blue ;
+    background-color: yellow;;
+    /* Style rules for your heading element go here */
+}
+
+body {
+    background-color: pink;
+}
+
+button {
+    background-color: blue;
+    color: white;
+}

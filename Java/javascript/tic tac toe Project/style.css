@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding:0; 
+}
+
+body{
+    background-color: #f2f2f2;
+    text-align: center;
+
+}
+
+.container{
+    height: 
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin-top: 50px;
+}
