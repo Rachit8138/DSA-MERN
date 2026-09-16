@@ -14,7 +14,7 @@
 
 // -----------------node style------------
 
-// let divs = document.querySelector("div");
+let divs = document.querySelector("div");
 // console.log(divs.style);
 
 
@@ -25,5 +25,5 @@
 // divs.style.visibility="hidden";
 
 // __________________
-let newbtn = document.querySelector("button");
-console.log(newbtn.innerText);
+// let newbtn = document.querySelector("button");
+// console.log(newbtn.innerText);

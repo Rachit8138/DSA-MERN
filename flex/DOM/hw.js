@@ -1,6 +1,6 @@
 // Let‘s Practice
-// Qs. Create a H2 heading element with text - “Hello JavaScript”. Append “from Apna College
-// students” to this text using JS.
+// Qs. Create a H2 heading element with text - “Hello JavaScript”. Append “from Apna College"
+//  to this text using JS.
 let heading = document.querySelector("h2");
 console.dir(heading.innerText)
 
@@ -18,11 +18,12 @@ let div = document.querySelectorAll(".box")
 let i =0;
 for(a of div){
     // console.log(a.innerText);
-    div.innerText= `new unique value ${i}`;
-    console.log(div.innerText);
+    a.innerText= `new unique value ${i}`;
+    console.log(a.innerText);
     i++;
-
 }
+
+
 
 /*
  `${}` 
