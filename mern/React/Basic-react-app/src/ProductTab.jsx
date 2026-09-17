@@ -1,19 +1,15 @@
-import Product from "./Product.jsx"
+import { Product, Price, Description } from "./Product.jsx";
 
-function ProductTab(){
-    return(
-        <>
-            {/* <h1>this is my app component</h1>
-            <p>inside app comonent we have</p>
-            <Title/>
-            <Description/> */}
-        
-            <Product/>
-            <Product/>
-            <Product/>
-        
-          </>
-          )
+function ProductTab() {
+    return (
+        <div>
+            <Product title="phone" priced={9000/2} />
+            <Product title="laptop" priced="8,500"/>
+            <Product title ="pen" />
+            {/* <Price />
+            <Description /> */}
+        </div>
+    );
 }
 
 export default ProductTab;

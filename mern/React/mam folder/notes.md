@@ -1,40 +1,64 @@
+### Rendering is a process where computer uses instructions to generate output/ webpage on screen
+
 ![alt text](image.png)<br>
 ![alt text](image-1.png)<br>
 ![alt text](image-2.png)
 
-node-modules: has all the node dependencies 
-public: svg file 
 
-imp src folder
-assets: react svg image 
+node_modules/	Installed npm dependencies.
+public/	svg img of vite
+src/	Main application source code.
+src/assets/	svg img of react
 
-app.css:
-app.jsx: app is our component 
-index.css
-main.jsx:
+The complete flow
 
-app.jsx has our component and inside it there will be other sub components
-component will have html css js
+Imagine you have:
+<!-- 
+index.html
+<div id="root"></div>
 
-js, html- app.jsx
-css -app.css
+main.jsx
+createRoot(document.getElementById("root")).render(<App />);
 
-single app component - app.js+app.css
---------------------------------------------------------------------------
-index.html is the main page  
-------------------------------------------------------------------------
-main.jsx usually import 
+App.jsx
+"
+function App() {
+  return (
+    <div>
+      <h1>Hello World</h1>
+      <Title />
+    </div>
+  );
+}
+" -->
+The flow is:
 
-conclusion 
-index.html has root id and script file was main.jsx
-main.jsx will access root element and root element is accessed and rendered. app  component is  coming from app.jsx 
+        index.html
+            │
+            │
+            ▼
+    <div id="root"></div>
+            │
+            │  main.jsx finds #root
+            ▼
+       React starts
+            │
+            │  render(<App />)
+            ▼
+          App
+            │
+            ├── <h1>Hello World</h1>
+            │
+            └── <Title />
+                    │
+                    ▼
+                 Title
 
-app.jsx has count  returns/exported to main.jsx
 
-the homepage is created from app.jsx 
-the whole page is a component in itself 
 
-index.html/ treads main -> root component
+
+
+
 
 3 main file 
 index.html, main.jsx and app.jsx
@@ -60,17 +84,19 @@ to return multiple elemtns from a component, wrapt them with a single parent tag
 ![alt text](image-6.png)
 
 ![alt text](image-7.png)
-FRAGMENT-  small part
-you normally write div which creates extra node, if you don't want to make extra node
+
 <></>
 
 ![alt text](image-8.png)
 jsx with curly braces helps us to write pure js 
 ![alt text](image-9.png)
-Product component 
-helps with reusability 
 ![alt text](image-10.png)
 each file will have separate css file industry standards 
 
-web pack allows you with import and export property 
+--------------------------
+![alt text](image-11.png) <br>
 
+"3000"->string
+{3000}-> number
+default value Produce.({title, priced=1})
+if price is not there default price will 1 
