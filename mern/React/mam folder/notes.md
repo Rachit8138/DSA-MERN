@@ -100,3 +100,6 @@ each file will have separate css file industry standards
 {3000}-> number
 default value Produce.({title, priced=1})
 if price is not there default price will 1 
+
+--------------------------------------
+![alt text](image-12.png)<br>
