@@ -103,3 +103,37 @@ if price is not there default price will 1
 
 --------------------------------------
 ![alt text](image-12.png)<br>
+ # React: Rendering Arrays Using .map()
+1. What is .map()?
+
+.map() is a JavaScript array method used to go through every item in an array and create a new result from each item.
+
+2. Basic Syntax
+array.map((item) => {
+    return something;
+});
+
+In React, we commonly use it to create JSX elements:
+
+array.map((item) => (
+    <li>{item}</li>
+))
+3. Example
+let features = ["hi-tech", "durable", "fast"];
+
+features.map((feature) => (
+    <li key={feature}>{feature}</li>
+));
+
+.map() runs for every item:
+
+"hi-tech"  →  <li>hi-tech</li>
+"durable"  →  <li>durable</li>
+"fast"     →  <li>fast</li>
+--------------------
+![alt text](image-14.png)
+camelCase for styling: backgroundColor
+
+=============================
+DYNAMICE styling component 
+![alt text](image-15.png)
