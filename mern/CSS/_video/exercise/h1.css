@@ -1,0 +1,143 @@
+/* Practice Set 1
+Q1:
+Q2:
+Create a simple div with an id "box". 
+Add some text content inside the div.
+Set its background color to blue.
+APNA
+Create 3 headings with h1, h2 & h3. 
+Give them all a class "heading" & set color of "heading" to red.
+COLLEGE
+Q3:
+Create a button & set its background color to :
+green using css stylesheet // external
+blue using <style> tag-> internal
+pink -> inline style   */
+
+/* #box{
+    background-color: blue;
+}
+
+.heading{
+    color: red;
+}
+button{
+    background-color: green;
+} */
+
+/* 
+Practice Set 2
+Q1:Create a heading centred on the page with all of its text capitalized by default. 
+Q2:Set the font family of all the content in the document to "Times New Roman".
+Q3:Create one div inside another div. 
+Set id & text "outer" for the first one & "inner" for the second one.
+Set the outer div text size to 25px & inner div text size to 10px.
+
+*/
+
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: "TIMES NEW ROMAN";
+}
+
+#outer{
+    font-size: 20px;
+}
+#inner{
+    font-size: 30px;
+}
+
+/* Practice Set 3
+Q1:Create a div with height & width of 100px.
+Set its background color to green & the border radius to 50%.
+Q2: Create the following navbar.
+ */
+ #box{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+ }
+
+ /* --------------------------------- */
+  *{
+    margin: 0px;
+    padding:0px;
+    color: white;
+ }
+ header{
+    background-color: black;
+    height: 60px;
+    border: 6px solid blue;
+ } 
+ #logo{
+    color: orange;
+    font-size: 25px;
+ }
+ button{
+    color: white;
+    background-color: #f08804;
+ }
+ 
+a{
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+
+
+
+ /* Practice Set 4
+
+Create a webpage layout with a header, a footer & a content area containing 3 divs. Set the height & width of divs to 100px. (add the previous navbar in the header)
+Add borders to all the divs.
+Add a different background color to each div with an opacity of 0.5.
+Give the content area an appropriate height. */
+
+.contentbox{
+    height: 100px;
+    width:100px;
+    border: 1px solid black ;
+    /* display: inline-block; */
+}
+#content{
+    height: 600px;
+}
+footer{ 
+    height: 100px;
+    background-color: black; 
+    text-align: center;
+    color: white;
+}
+/* Practice Set 5
+Create the following layout using the given HTML:
+
+Give the div a height, width & some background image.
+Use the appropriate position property for the div element to place it at the right end of the page. (The div should not move even on scroll)
+Use z-index to place the div on top of the page.
+html
+<p> lorem*5 </p>
+<div> Love Nature </div>
+<p> lorem*5 </p> */
+
+/* Practice Set 6
+
+Create a navbar with 4 options in the form of anchor tags inside list items. Now, use flexbox to place them all spaced equally in a single line.
+Use flexbox to center one div inside another div.
+Which has higher priority — align-items or align-self? */
+/* 
+Practice Set 7
+Add a media query to implement the following:
+
+The color of a div changes to green for viewport width less than 300px
+The color of a div changes to pink for width between 300px & 400px
+The color of a div changes to red for width between 400px & 600px
+The color of a div changes to blue for width above 600px */
+
+/* Practice Set 8
+Create a simple loader using CSS:
+
+Create a div with circular shape & a thick border from one end (top/bottom/left/right)
+To make it spin, create an animation which transforms it from 0deg to 360deg
+Add the animation property to the loader with infinite duration */
