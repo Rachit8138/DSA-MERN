@@ -1,16 +1,19 @@
-import  Product from "./Product.jsx";
+import Product from "./Product.jsx";
 
-function ProductTab() {
-    // let option1=["hitech","durable", "fast"];//array
-    // let option2={a:"hitech",b:"durable",c:"fast"};// for objects
-    return (
-        <>
-            <Product title="phone" priced={9000/2} />
-            <Product title="laptop" priced="8,500"/>
-            <Product title ="pen" priced={1000}/>
-            {/* <Price />
-            <Description /> */}
-        </>
-    );
+export default function ProductTab() {
+  let styles = {
+    display: "flex",
+    // flexWrap: "wrap",
+    // justifyContent: "center",
+    // alignItems: "center",
+  };
+
+  return (
+    <div style={styles}>
+      <Product title="Logitech MX Master" idx={0} />
+      <Product title="Apple Pencil (2nd Gen)" idx={1} />
+      <Product title="Zebronics " idx={2} />
+      <Product title="Petronics Toad 23" idx={3} />
+    </div>
+  );
 }
-export default ProductTab;

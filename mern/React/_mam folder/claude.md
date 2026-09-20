@@ -195,3 +195,17 @@ features.map((feature) => (
 ### Dynamic Styling of Components
 
 ![alt text](image-15.png)
+![alt text](image-16.png) 
+![alt text](image-17.png)
+![alt text](image-18.png)
+&nbsp-non breaking space 
+--------------------------------------
+![alt text](image-19.png)
+![alt text](image-20.png)
+onClick-click
+onMouseOver-hover
+onDoubleClick-dblclick
+
+![alt text](image-21.png)
+prevent default behavior pauses the screen for once, form automatically refresh the conasole window
+![alt text](image-22.png)

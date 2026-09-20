@@ -1,6 +1,9 @@
-.Product{
-    border: 1px solid red;
-    border-radius: 24px;
-    margin-bottom: 50px;
-    padding: 0 10px 0 10px;
+.Product {
+  border: 1px solid black;
+  border-radius: 14px;
+  margin-bottom: 15px;
+  /* padding: 0 10px 0 10px; */
+  margin-left: 15px;
+  width: 200px;
+  height: 160px;
 }
