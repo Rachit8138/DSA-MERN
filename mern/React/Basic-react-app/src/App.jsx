@@ -1,6 +1,7 @@
 import "./App.css";// the styling comes from here 
 import Title from "./Title.jsx"
 import ProductTab from "./ProductTab.jsx"
+import Hw from "./Hw.jsx"
 
 // basically requiring product from producttab
 
@@ -17,8 +18,11 @@ function App() {// whatever is returned by the app it is out component
     <Title/>
     <Description/> */}
 
-    <ProductTab/>
+    {/* <ProductTab/> */}
+    
 
+      <Hw username="rachit" textcolor="pink" />
+      <Hw username="hello" textcolor="red" />
   </>
   )
 }

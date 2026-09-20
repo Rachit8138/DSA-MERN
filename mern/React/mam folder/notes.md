@@ -137,3 +137,8 @@ camelCase for styling: backgroundColor
 =============================
 DYNAMICE styling component 
 ![alt text](image-15.png)
+![alt text](image-16.png)
+# Install React Developer tool ie. react chrome extension <br>
+![
+  
+](image-17.png)
