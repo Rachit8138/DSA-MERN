@@ -1,9 +1,21 @@
-.Product {
+/* .Product {
   border: 1px solid black;
   border-radius: 14px;
   margin-bottom: 15px;
-  /* padding: 0 10px 0 10px; */
+  padding: 0 10px 0 10px;
   margin-left: 15px;
   width: 200px;
   height: 160px;
+} */
+
+.product{
+  border: 2px solid black;
+  /* display: flex; */
+  margin-left: 10px;
+  /* padding: 10px; */
+  border-radius: 14px;
+  /* width: 200px; */
+  height: 170px;
+  /* padding: 5px 5px; */
+
 }
