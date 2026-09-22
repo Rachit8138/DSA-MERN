@@ -208,4 +208,25 @@ onDoubleClick-dblclick
 
 ![alt text](image-21.png)
 prevent default behavior pauses the screen for once, form automatically refresh the conasole window
-![alt text](image-22.png)
+![alt text](image-22.png) <br>
+there won't be updation in ui part. dom is not changing 
+
+component-> function->renders
+
+doesn't re renders the ui part 
+
+# props in react are immutable
+![alt text](image-23.png) <br>
+![alt text](image-24.png)
+![alt text](image-25.png)
+font awesome cdn-> copy the link -> include in the index.html
+font awesome icons-> 
+
+## now we want to make changes in the variable 
+change heart icon
+whenever there is an event we will need to make use of state variable
+toggle- true or change to false viceversa 
+hook can only be called inside the component inside the function component 
+<br>
+![alt text](image-26.png)
+if b is declared outer function as 20 and in inner function declare it to, 40 once the inner loop finishes it re initialises. 

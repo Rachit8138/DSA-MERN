@@ -1,10 +1,14 @@
 
 import './App.css'
 import Button from './Button'
+import Counter from './Counter'
+import LikeButton from './LikeButton'
 
 function App() {
   return(
-    <Button/>
+   <> <h1>States in reasct</h1>
+    <Counter/>
+   </>
   )
 }
 
