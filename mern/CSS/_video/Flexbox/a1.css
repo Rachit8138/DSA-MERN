@@ -11,9 +11,9 @@ div {
 
 #container {
     width: 800px;
-    height: 300px;
+    height: 600px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column  ;
 
 }
 

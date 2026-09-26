@@ -1,0 +1,60 @@
+/* Practice Set 5
+Qs:Create the following layout using the given html.
+-Give the div a height, width & some background image.
+APNA
+Use the appropriate position property for the div element to place it at the
+right end of the page. (The div should not move even on scroll)
+Use z-index to place the div on top of page.
+COLLEGE
+<p> lorem*5 </p>
+<div> Love Nature </div>
+<p> lorem*5 </p */
+
+#box {
+  height: 200px;
+  width: 150px;
+  background-image: url("cat.jpg");
+  background-size: cover;
+  position: fixed;
+  right: 2px;
+  bottom: 2px;
+  z-index: -1;
+}
+
+/* 
+Practice Set 7
+Qs:Add a media query to implement the following:
+-the color of a div changes to green for viewport width less than 300px
+-the color of a div changes to pink for width between 300px & 400px
+-the color of a div changes to red for width between 400px & 600px
+-the color of a div changes to blue for width above 600px 
+*/
+
+#media {
+  height: 40px;
+  width: 30px;
+  border:
+    2px,
+    solid black;
+  background-color: grey;
+}
+@media (max-width: 300px) {
+  #media {
+    background-color: green;
+  }
+}
+@media(max-width:400px) and (min-width:300px){
+    #media{
+        background-color: pink;
+    }
+}
+@media(max-width:600px) and (min-width:400px){
+    #media{
+        background-color: red;
+    }
+}
+@media (min-width: 600px) {
+  #media {
+    background-color: blue;
+  }
+}

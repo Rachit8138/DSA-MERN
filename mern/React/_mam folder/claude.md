@@ -207,13 +207,21 @@ onMouseOver-hover
 onDoubleClick-dblclick
 
 ![alt text](image-21.png)
-prevent default behavior pauses the screen for once, form automatically refresh the conasole window
+for forms prevent default behavior of refreshing pauses the screen for once, form automatically refresh the console window
 ![alt text](image-22.png) <br>
-there won't be updation in ui part. dom is not changing 
 
 component-> function->renders
 
-doesn't re renders the ui part 
+doesn't re renders the ui part. dom doesn't change 
+For example:
+
+Like button: liked or not liked.
+
+Counter: current count.
+
+Shopping cart: number of items.
+
+Toggle button: on or off.
 
 # props in react are immutable
 ![alt text](image-23.png) <br>
@@ -229,4 +237,36 @@ toggle- true or change to false viceversa
 hook can only be called inside the component inside the function component 
 <br>
 ![alt text](image-26.png)
-if b is declared outer function as 20 and in inner function declare it to, 40 once the inner loop finishes it re initialises. 
+A closure happens when an inner function remembers variables from its outer scope, even after the outer function has finished executing.
+
+function outer() {
+    let count = 10;
+
+    function inner() {
+        console.log(count);
+    }
+
+    return inner;
+}
+
+const result = outer();
+
+result(); // 10
+
+![alt text](image-27.png) <br>
+1. new state value depends on old state -> callbacks
+2. new value doesn't depend on old state -> setCount(25)
+![alt text](image-28.png)
+
+# imp points 
+1. Re renders only if state value change
+2. Parameter should be passed as reference not as frunction ( cause it will be executed even if not used ) 
+<br>
+![alt text](image-29.png)
+
+# Objects as state variable
+Objects  even if we change the key's value, objects reference doesn't changes in js
+objects ->spread-> object copy(new address)->updation
+Arrays value changes but original address remains same 
+
+# Arrays as state variabble
