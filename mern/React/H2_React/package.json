@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "uuid": "^14.0.2"
   },
   "devDependencies": {
     "@types/react": "^19.2.18",

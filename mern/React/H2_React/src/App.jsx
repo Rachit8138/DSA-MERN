@@ -4,11 +4,12 @@ import Button from './Button'
 import Counter from './Counter'
 import LikeButton from './LikeButton'
 import LudoBoard from './Ludoboard.jsx'
+import TodoList from './TodoList.jsx'
 
 function App() {
   return(
-   <> <h1>Game begins</h1>
-    <LudoBoard/>
+   <> <h1>Todo List</h1>
+    <TodoList/>
    </>
   )
 }
