@@ -1,11 +1,10 @@
 /* Practice Set 5
 Qs:Create the following layout using the given html.
--Give the div a height, width & some background image.
-APNA
-Use the appropriate position property for the div element to place it at the
+1. Give the div a height, width & some background image.
+2. Use the appropriate position property for the div element to place it at the
 right end of the page. (The div should not move even on scroll)
-Use z-index to place the div on top of page.
-COLLEGE
+3.Use z-index to place the div on top of page.
+
 <p> lorem*5 </p>
 <div> Love Nature </div>
 <p> lorem*5 </p */
@@ -18,9 +17,40 @@ COLLEGE
   position: fixed;
   right: 2px;
   bottom: 2px;
-  z-index: -1;
+  z-index: -2;
 }
 
+/* Practice Set 6
+1. Create a navbar with 4 options in the form of anchor tags inside list items.
+Now, use flexbox to place them all spaced equally in a single line.
+
+2. flexbox to center one div inside another div.
+
+3. Which has higher priority - align-items or align-self */
+
+
+nav{
+  display: flex;
+  justify-content: space-evenly;
+}
+a{
+  text-decoration: none;
+}
+#innerdiv{
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  /* z-index: 1; */
+}
+#outerdiv{
+  height: 200px;
+  width: 150px;
+  background-color: red;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* 
 Practice Set 7
 Qs:Add a media query to implement the following:

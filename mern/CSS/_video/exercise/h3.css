@@ -14,7 +14,7 @@ Step 3: Add the animation property to the loader with infinite duration.
     height: 100px;
     border-radius: 50%;
     border: 10px solid blue;
-    border-left: 10px solid black;
+    border-left: 10px solid black; 
 
     animation: spin 1s ease-in-out 0s infinite normal;
 }
